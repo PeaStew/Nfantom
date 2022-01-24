@@ -5,4 +5,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Nfantom.KeyStore\Nfantom.KeyStore.csproj" />
+    <ProjectReference Include="..\Nfantom.RPC\Nfantom.RPC.csproj" />
+    <ProjectReference Include="..\Nfantom.Signer\Nfantom.Signer.csproj" />
+    <ProjectReference Include="..\Nfantom.Util\Nfantom.Util.csproj" />
+  </ItemGroup>
+
 </Project>
