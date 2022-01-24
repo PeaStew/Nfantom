@@ -3,7 +3,7 @@ using Nfantom.Hex.HexConvertors.Extensions;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.Signer;
 
-namespace Nfantom.Accounts
+namespace Nfantom.Web3.Accounts
 {
     public static class AccessListRPCToSignerMapper
     {

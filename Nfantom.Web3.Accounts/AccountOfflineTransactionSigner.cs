@@ -5,9 +5,10 @@ using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.Signer;
 using Nfantom.Util;
-using Nfantom.Web3.Accounts;
+using Nfantom.RPC.Accounts;
+using Nethereum.Web3.Accounts;
 
-namespace Nfantom.Accounts
+namespace Nfantom.Web3.Accounts
 {
     public class AccountOfflineTransactionSigner
     {

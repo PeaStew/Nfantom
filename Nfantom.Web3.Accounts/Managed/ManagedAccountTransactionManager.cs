@@ -9,7 +9,7 @@ using Nfantom.RPC.TransactionManagers;
 using Nfantom.Signer;
 using Nfantom.Util;
 
-namespace Nfantom.Accounts.Managed
+namespace Nfantom.Web3.Accounts.Managed
 {
     public class ManagedAccountTransactionManager : TransactionManagerBase
     {

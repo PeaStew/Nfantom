@@ -10,9 +10,8 @@ using Nfantom.RPC.NonceServices;
 using Nfantom.RPC.TransactionManagers;
 using Nfantom.Signer;
 using Nfantom.Util;
-using Nfantom.Accounts;
 
-namespace Nfantom.Accounts.External
+namespace Nfantom.Web3.Accounts
 {
     public class ExternalAccountSignerTransactionManager : TransactionManagerBase
     {

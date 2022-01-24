@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Linq;
 
-namespace Nfantom.Accounts
+namespace Nfantom.Web3.Accounts
 {
     /****
         Copyright(c) 2014 Metaco SA

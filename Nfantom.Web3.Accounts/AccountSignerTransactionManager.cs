@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using Nfantom.Accounts;
+using Nethereum.Web3.Accounts;
 using Nfantom.Hex.HexConvertors.Extensions;
 using Nfantom.Hex.HexTypes;
 using Nfantom.JsonRpc.Client;
@@ -72,7 +72,7 @@ namespace Nfantom.Web3.Accounts
             if (transaction == null) throw new ArgumentNullException(nameof(transaction));
             SetDefaultGasIfNotSet(transaction);
 
-            return _transactionSigner.SignTransaction((Account)Account, transaction, ChainId);
+            return _transactionSigner.SignTransaction(Account, transaction, ChainId);
         }
 
         protected async Task<string> SignTransactionRetrievingNextNonceAsync(TransactionInput transaction)

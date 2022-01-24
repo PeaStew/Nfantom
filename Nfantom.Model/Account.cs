@@ -2,7 +2,7 @@
 
 namespace Nfantom.Model
 {
-    public class Account
+    public class ModelAccount
     {
 
         //TODO: https://github.com/ethereum/EIPs/issues/1186

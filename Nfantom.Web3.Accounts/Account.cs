@@ -1,13 +1,13 @@
 ﻿using System.Numerics;
-using Nfantom.Accounts;
 using Nfantom.Hex.HexConvertors.Extensions;
 using Nfantom.KeyStore;
+using Nfantom.RPC.Accounts;
 using Nfantom.RPC.NonceServices;
 using Nfantom.RPC.TransactionManagers;
 using Nfantom.Signer;
-using Nfantom.RPC.Accounts;
+using Nfantom.Web3.Accounts;
 
-namespace Nfantom.Web3.Accounts
+namespace Nethereum.Web3.Accounts
 {
     public class Account : IAccount
     {

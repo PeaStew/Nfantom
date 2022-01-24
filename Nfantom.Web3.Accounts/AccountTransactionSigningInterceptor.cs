@@ -5,7 +5,7 @@ using Nfantom.JsonRpc.Client;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.Web3.Accounts;
 
-namespace Nfantom.Accounts
+namespace Nfantom.Web3.Accounts
 {
     public class AccountTransactionSigningInterceptor : RequestInterceptor
     {

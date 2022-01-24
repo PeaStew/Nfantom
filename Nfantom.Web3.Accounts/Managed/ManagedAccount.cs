@@ -2,7 +2,7 @@
 using Nfantom.RPC.NonceServices;
 using Nfantom.RPC.TransactionManagers;
 
-namespace Nfantom.Accounts.Managed
+namespace Nfantom.Web3.Accounts.Managed
 {
     public class ManagedAccount : IAccount
     {

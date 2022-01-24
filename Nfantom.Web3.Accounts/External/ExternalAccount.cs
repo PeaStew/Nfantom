@@ -6,7 +6,7 @@ using Nfantom.RPC.NonceServices;
 using Nfantom.RPC.TransactionManagers;
 using Nfantom.Signer;
 
-namespace Nfantom.Accounts.External
+namespace Nfantom.Web3.Accounts
 {
     public class ExternalAccount : IAccount
     {
