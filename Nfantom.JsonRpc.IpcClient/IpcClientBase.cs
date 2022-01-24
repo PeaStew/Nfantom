@@ -12,7 +12,7 @@ namespace Nfantom.JsonRpc.IpcClient
         protected readonly string IpcPath;
         public static int ForceCompleteReadTotalMiliseconds { get; set; } = 2000;
 
-        public IpcClientBase(string ipcPath, JsonSerializerSettings jsonSerializerSettings = null)
+        public IpcClientBase(string ipcPath, JsonSerializerSettings? jsonSerializerSettings = null)
         {
             if (jsonSerializerSettings == null)
                 jsonSerializerSettings = DefaultJsonSerializerSettingsFactory.BuildDefaultJsonSerializerSettings();
@@ -20,7 +20,7 @@ namespace Nfantom.JsonRpc.IpcClient
             JsonSerializerSettings = jsonSerializerSettings;
         }
 
-        public JsonSerializerSettings JsonSerializerSettings { get; set; }
+        public JsonSerializerSettings? JsonSerializerSettings { get; set; }
 
      
         public string ReadJson(JsonReader reader)

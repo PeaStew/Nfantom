@@ -19,9 +19,9 @@ namespace Nfantom.JsonRpc.IpcClient
     {
         private readonly ILog _log;
         protected readonly string IpcPath;
-        public JsonSerializerSettings JsonSerializerSettings { get; set; }
+        public JsonSerializerSettings? JsonSerializerSettings { get; set; }
 
-        public SimpleIpcClient(string ipcPath, JsonSerializerSettings jsonSerializerSettings = null, ILog log = null)
+        public SimpleIpcClient(string ipcPath, JsonSerializerSettings? jsonSerializerSettings = null, ILog log = null)
         {
             if (jsonSerializerSettings == null)
                 jsonSerializerSettings = DefaultJsonSerializerSettingsFactory.BuildDefaultJsonSerializerSettings();

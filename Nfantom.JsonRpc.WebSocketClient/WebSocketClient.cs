@@ -20,7 +20,7 @@ namespace Nfantom.JsonRpc.WebSocketClient
         protected string Path { get; set; }
         public static int ForceCompleteReadTotalMilliseconds { get; set; } = 2000;
 
-        private WebSocketClient(string path, JsonSerializerSettings jsonSerializerSettings = null)
+        private WebSocketClient(string path, JsonSerializerSettings? jsonSerializerSettings = null)
         {
             this.SetBasicAuthenticationHeaderFromUri(new Uri(path));
             if (jsonSerializerSettings == null)
@@ -32,14 +32,14 @@ namespace Nfantom.JsonRpc.WebSocketClient
             JsonSerializerSettings = jsonSerializerSettings;
         }
 
-        public JsonSerializerSettings JsonSerializerSettings { get; set; }
+        public JsonSerializerSettings? JsonSerializerSettings { get; set; }
         private readonly object _lockingObject = new object();
         private readonly ILog _log;
 
         private ClientWebSocket _clientWebSocket;
 
 
-        public WebSocketClient(string path, JsonSerializerSettings jsonSerializerSettings = null, ILog log = null) : this(path, jsonSerializerSettings)
+        public WebSocketClient(string path, JsonSerializerSettings? jsonSerializerSettings = null, ILog log = null) : this(path, jsonSerializerSettings)
         {
             _log = log;
         }

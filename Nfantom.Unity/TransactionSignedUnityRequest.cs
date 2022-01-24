@@ -185,7 +185,7 @@ namespace Nfantom.Unity
 
             if (nonce == null)
             {
-                yield return _transactionCountRequest.SendRequest(_account, Nethereum.RPC.Eth.DTOs.BlockParameter.CreateLatest());
+                yield return _transactionCountRequest.SendRequest(_account, Nfantom.RPC.Eth.DTOs.BlockParameter.CreateLatest());
 
                 if (_transactionCountRequest.Exception == null)
                 {

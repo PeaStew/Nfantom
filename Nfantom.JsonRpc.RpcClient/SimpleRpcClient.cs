@@ -12,11 +12,11 @@ namespace Nfantom.JsonRpc.RpcClient
 {
     public class SimpleRpcClient : ClientBase
     {
-        private readonly JsonSerializerSettings _jsonSerializerSettings;
+        private readonly JsonSerializerSettings? _jsonSerializerSettings;
         private readonly HttpClient _httpClient;
 
         public SimpleRpcClient(Uri baseUrl, HttpClient httpClient,
-            JsonSerializerSettings jsonSerializerSettings = null)
+            JsonSerializerSettings? jsonSerializerSettings = null)
         {
             if (jsonSerializerSettings == null)
                 jsonSerializerSettings = DefaultJsonSerializerSettingsFactory.BuildDefaultJsonSerializerSettings();

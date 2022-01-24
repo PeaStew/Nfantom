@@ -9,6 +9,6 @@ namespace Nfantom.Unity
     {
         IEnumerator SuggestFee(BigInteger? maxPriorityFeePerGas = null);
         Fee1559 Result { get; set; }
-        Exception Exception { get; set; }
+        Exception? Exception { get; set; }
     }
 }

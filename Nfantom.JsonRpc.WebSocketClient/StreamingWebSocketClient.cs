@@ -35,7 +35,7 @@ namespace Nfantom.JsonRpc.WebSocketClient
 
         public event WebSocketStreamingErrorEventHandler Error;
 
-        private StreamingWebSocketClient(string path, JsonSerializerSettings jsonSerializerSettings = null)
+        private StreamingWebSocketClient(string path, JsonSerializerSettings? jsonSerializerSettings = null)
         {
             if (jsonSerializerSettings == null)
                 jsonSerializerSettings = DefaultJsonSerializerSettingsFactory.BuildDefaultJsonSerializerSettings();
@@ -45,7 +45,7 @@ namespace Nfantom.JsonRpc.WebSocketClient
             _cancellationTokenSource = new CancellationTokenSource();
         }
 
-        public JsonSerializerSettings JsonSerializerSettings { get; set; }
+        public JsonSerializerSettings? JsonSerializerSettings { get; set; }
         private readonly object _lockingObject = new object();
         private readonly ILog _log;
 
@@ -95,7 +95,7 @@ namespace Nfantom.JsonRpc.WebSocketClient
             }
         }
 
-        public StreamingWebSocketClient(string path, JsonSerializerSettings jsonSerializerSettings = null, ILog log = null) : this(path, jsonSerializerSettings)
+        public StreamingWebSocketClient(string path, JsonSerializerSettings? jsonSerializerSettings = null, ILog log = null) : this(path, jsonSerializerSettings)
         {
             _log = log;
         }

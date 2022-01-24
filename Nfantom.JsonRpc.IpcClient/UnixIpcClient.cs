@@ -14,7 +14,7 @@ namespace Nfantom.JsonRpc.IpcClient
     {
         private readonly object _lockingObject = new object();
         private readonly ILog _log;
-        public UnixIpcClient(string ipcPath, JsonSerializerSettings jsonSerializerSettings = null, ILog log = null) : base(ipcPath, jsonSerializerSettings)
+        public UnixIpcClient(string ipcPath, JsonSerializerSettings? jsonSerializerSettings = null, ILog log = null) : base(ipcPath, jsonSerializerSettings)
         {
             _log = log;
         }

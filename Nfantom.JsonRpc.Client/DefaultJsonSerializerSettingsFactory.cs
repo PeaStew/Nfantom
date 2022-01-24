@@ -9,7 +9,7 @@ namespace Nfantom.JsonRpc.Client
 {
     public static class DefaultJsonSerializerSettingsFactory
     {
-        public static JsonSerializerSettings BuildDefaultJsonSerializerSettings()
+        public static JsonSerializerSettings? BuildDefaultJsonSerializerSettings()
         {
             return new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore,
                                                 MissingMemberHandling = MissingMemberHandling.Ignore };

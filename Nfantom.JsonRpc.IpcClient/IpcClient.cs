@@ -18,7 +18,7 @@ namespace Nfantom.JsonRpc.IpcClient
         private NamedPipeClientStream _pipeClient;
       
 
-        public IpcClient(string ipcPath, JsonSerializerSettings jsonSerializerSettings = null, ILog log = null) : base(ipcPath, jsonSerializerSettings)
+        public IpcClient(string ipcPath, JsonSerializerSettings? jsonSerializerSettings = null, ILog log = null) : base(ipcPath, jsonSerializerSettings)
         {
             _log = log;
         }

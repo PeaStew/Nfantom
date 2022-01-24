@@ -18,7 +18,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Web3.Web3ClientVersion _web3ClientVersion;
 
-        public Web3ClientVersionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public Web3ClientVersionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _web3ClientVersion = new RPC.Web3.Web3ClientVersion(null);
         }
@@ -35,7 +35,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Web3.Web3Sha3 _web3Sha3;
 
-        public Web3Sha3UnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public Web3Sha3UnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _web3Sha3 = new RPC.Web3.Web3Sha3(null);
         }
@@ -52,7 +52,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Shh.KeyPair.ShhNewKeyPair _shhNewKeyPair;
 
-        public ShhNewKeyPairUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public ShhNewKeyPairUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _shhNewKeyPair = new RPC.Shh.KeyPair.ShhNewKeyPair(null);
         }
@@ -68,7 +68,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Shh.KeyPair.ShhAddPrivateKey _addPrivateKey;
 
-        public ShhAddPrivateKeyUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public ShhAddPrivateKeyUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _addPrivateKey = new RPC.Shh.KeyPair.ShhAddPrivateKey(null);
         }
@@ -84,7 +84,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Shh.ShhVersion _shhVersion;
 
-        public ShhVersionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public ShhVersionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _shhVersion = new RPC.Shh.ShhVersion(null);
         }
@@ -100,7 +100,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Personal.PersonalListAccounts _personalListAccounts;
 
-        public PersonalListAccountsUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public PersonalListAccountsUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _personalListAccounts = new RPC.Personal.PersonalListAccounts(null);
         }
@@ -117,7 +117,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Personal.PersonalLockAccount _personalLockAccount;
 
-        public PersonalLockAccountUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public PersonalLockAccountUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _personalLockAccount = new RPC.Personal.PersonalLockAccount(null);
         }
@@ -134,7 +134,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Personal.PersonalNewAccount _personalNewAccount;
 
-        public PersonalNewAccountUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public PersonalNewAccountUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _personalNewAccount = new RPC.Personal.PersonalNewAccount(null);
         }
@@ -151,7 +151,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Personal.PersonalSignAndSendTransaction _personalSignAndSendTransaction;
 
-        public PersonalSignAndSendTransactionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public PersonalSignAndSendTransactionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _personalSignAndSendTransaction = new RPC.Personal.PersonalSignAndSendTransaction(null);
         }
@@ -168,7 +168,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Personal.PersonalUnlockAccount _personalUnlockAccount;
 
-        public PersonalUnlockAccountUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public PersonalUnlockAccountUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _personalUnlockAccount = new RPC.Personal.PersonalUnlockAccount(null);
         }
@@ -185,7 +185,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Net.NetListening _netListening;
 
-        public NetListeningUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public NetListeningUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _netListening = new RPC.Net.NetListening(null);
         }
@@ -202,7 +202,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Net.NetPeerCount _netPeerCount;
 
-        public NetPeerCountUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public NetPeerCountUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _netPeerCount = new RPC.Net.NetPeerCount(null);
         }
@@ -219,7 +219,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Net.NetVersion _netVersion;
 
-        public NetVersionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public NetVersionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _netVersion = new RPC.Net.NetVersion(null);
         }
@@ -236,7 +236,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthAccounts _ethAccounts;
 
-        public EthAccountsUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthAccountsUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethAccounts = new RPC.Eth.EthAccounts(null);
         }
@@ -253,7 +253,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthCoinBase _ethCoinBase;
 
-        public EthCoinBaseUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthCoinBaseUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethCoinBase = new RPC.Eth.EthCoinBase(null);
         }
@@ -270,7 +270,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthGasPrice _ethGasPrice;
 
-        public EthGasPriceUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGasPriceUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGasPrice = new RPC.Eth.EthGasPrice(null);
         }
@@ -287,7 +287,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthGetBalance _ethGetBalance;
 
-        public EthGetBalanceUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetBalanceUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetBalance = new RPC.Eth.EthGetBalance(null);
         }
@@ -304,7 +304,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthGetCode _ethGetCode;
 
-        public EthGetCodeUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetCodeUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetCode = new RPC.Eth.EthGetCode(null);
         }
@@ -321,7 +321,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthGetStorageAt _ethGetStorageAt;
 
-        public EthGetStorageAtUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetStorageAtUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetStorageAt = new RPC.Eth.EthGetStorageAt(null);
         }
@@ -338,7 +338,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthProtocolVersion _ethProtocolVersion;
 
-        public EthProtocolVersionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthProtocolVersionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethProtocolVersion = new RPC.Eth.EthProtocolVersion(null);
         }
@@ -355,7 +355,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthSign _ethSign;
 
-        public EthSignUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthSignUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethSign = new RPC.Eth.EthSign(null);
         }
@@ -372,7 +372,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.EthSyncing _ethSyncing;
 
-        public EthSyncingUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthSyncingUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethSyncing = new RPC.Eth.EthSyncing(null);
         }
@@ -389,7 +389,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Uncles.EthGetUncleByBlockHashAndIndex _ethGetUncleByBlockHashAndIndex;
 
-        public EthGetUncleByBlockHashAndIndexUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetUncleByBlockHashAndIndexUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetUncleByBlockHashAndIndex = new RPC.Eth.Uncles.EthGetUncleByBlockHashAndIndex(null);
         }
@@ -406,7 +406,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Uncles.EthGetUncleByBlockNumberAndIndex _ethGetUncleByBlockNumberAndIndex;
 
-        public EthGetUncleByBlockNumberAndIndexUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetUncleByBlockNumberAndIndexUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetUncleByBlockNumberAndIndex = new RPC.Eth.Uncles.EthGetUncleByBlockNumberAndIndex(null);
         }
@@ -423,7 +423,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Uncles.EthGetUncleCountByBlockHash _ethGetUncleCountByBlockHash;
 
-        public EthGetUncleCountByBlockHashUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetUncleCountByBlockHashUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetUncleCountByBlockHash = new RPC.Eth.Uncles.EthGetUncleCountByBlockHash(null);
         }
@@ -440,7 +440,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Uncles.EthGetUncleCountByBlockNumber _ethGetUncleCountByBlockNumber;
 
-        public EthGetUncleCountByBlockNumberUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetUncleCountByBlockNumberUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetUncleCountByBlockNumber = new RPC.Eth.Uncles.EthGetUncleCountByBlockNumber(null);
         }
@@ -457,7 +457,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthCall _ethCall;
 
-        public EthCallUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthCallUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethCall = new RPC.Eth.Transactions.EthCall(null);
         }
@@ -474,7 +474,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthEstimateGas _ethEstimateGas;
 
-        public EthEstimateGasUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthEstimateGasUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethEstimateGas = new RPC.Eth.Transactions.EthEstimateGas(null);
         }
@@ -491,7 +491,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthGetTransactionByBlockHashAndIndex _ethGetTransactionByBlockHashAndIndex;
 
-        public EthGetTransactionByBlockHashAndIndexUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetTransactionByBlockHashAndIndexUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetTransactionByBlockHashAndIndex = new RPC.Eth.Transactions.EthGetTransactionByBlockHashAndIndex(null);
         }
@@ -508,7 +508,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthGetTransactionByBlockNumberAndIndex _ethGetTransactionByBlockNumberAndIndex;
 
-        public EthGetTransactionByBlockNumberAndIndexUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetTransactionByBlockNumberAndIndexUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetTransactionByBlockNumberAndIndex = new RPC.Eth.Transactions.EthGetTransactionByBlockNumberAndIndex(null);
         }
@@ -525,7 +525,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthGetTransactionByHash _ethGetTransactionByHash;
 
-        public EthGetTransactionByHashUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetTransactionByHashUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetTransactionByHash = new RPC.Eth.Transactions.EthGetTransactionByHash(null);
         }
@@ -542,7 +542,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthGetTransactionCount _ethGetTransactionCount;
 
-        public EthGetTransactionCountUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetTransactionCountUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetTransactionCount = new RPC.Eth.Transactions.EthGetTransactionCount(null);
         }
@@ -559,7 +559,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthGetTransactionReceipt _ethGetTransactionReceipt;
 
-        public EthGetTransactionReceiptUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetTransactionReceiptUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetTransactionReceipt = new RPC.Eth.Transactions.EthGetTransactionReceipt(null);
         }
@@ -576,7 +576,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthSendRawTransaction _ethSendRawTransaction;
 
-        public EthSendRawTransactionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthSendRawTransactionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethSendRawTransaction = new RPC.Eth.Transactions.EthSendRawTransaction(null);
         }
@@ -593,7 +593,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthSendTransaction _ethSendTransaction;
 
-        public EthSendTransactionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthSendTransactionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethSendTransaction = new RPC.Eth.Transactions.EthSendTransaction(null);
         }
@@ -610,7 +610,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Mining.EthGetWork _ethGetWork;
 
-        public EthGetWorkUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetWorkUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetWork = new RPC.Eth.Mining.EthGetWork(null);
         }
@@ -627,7 +627,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Mining.EthHashrate _ethHashrate;
 
-        public EthHashrateUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthHashrateUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethHashrate = new RPC.Eth.Mining.EthHashrate(null);
         }
@@ -644,7 +644,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Mining.EthMining _ethMining;
 
-        public EthMiningUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthMiningUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethMining = new RPC.Eth.Mining.EthMining(null);
         }
@@ -661,7 +661,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Mining.EthSubmitHashrate _ethSubmitHashrate;
 
-        public EthSubmitHashrateUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthSubmitHashrateUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethSubmitHashrate = new RPC.Eth.Mining.EthSubmitHashrate(null);
         }
@@ -678,7 +678,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Mining.EthSubmitWork _ethSubmitWork;
 
-        public EthSubmitWorkUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthSubmitWorkUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethSubmitWork = new RPC.Eth.Mining.EthSubmitWork(null);
         }
@@ -695,7 +695,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthGetFilterChangesForEthNewFilter _ethGetFilterChangesForEthNewFilter;
 
-        public EthGetFilterChangesForEthNewFilterUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetFilterChangesForEthNewFilterUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetFilterChangesForEthNewFilter = new RPC.Eth.Filters.EthGetFilterChangesForEthNewFilter(null);
         }
@@ -712,7 +712,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthGetFilterChangesForBlockOrTransaction _ethGetFilterChangesForBlockOrTransaction;
 
-        public EthGetFilterChangesForBlockOrTransactionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetFilterChangesForBlockOrTransactionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetFilterChangesForBlockOrTransaction = new RPC.Eth.Filters.EthGetFilterChangesForBlockOrTransaction(null);
         }
@@ -729,7 +729,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthGetFilterLogsForBlockOrTransaction _ethGetFilterLogsForBlockOrTransaction;
 
-        public EthGetFilterLogsForBlockOrTransactionUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetFilterLogsForBlockOrTransactionUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetFilterLogsForBlockOrTransaction = new RPC.Eth.Filters.EthGetFilterLogsForBlockOrTransaction(null);
         }
@@ -746,7 +746,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthGetFilterLogsForEthNewFilter _ethGetFilterLogsForEthNewFilter;
 
-        public EthGetFilterLogsForEthNewFilterUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetFilterLogsForEthNewFilterUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetFilterLogsForEthNewFilter = new RPC.Eth.Filters.EthGetFilterLogsForEthNewFilter(null);
         }
@@ -763,7 +763,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthGetLogs _ethGetLogs;
 
-        public EthGetLogsUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetLogsUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetLogs = new RPC.Eth.Filters.EthGetLogs(null);
         }
@@ -780,7 +780,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthNewBlockFilter _ethNewBlockFilter;
 
-        public EthNewBlockFilterUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthNewBlockFilterUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethNewBlockFilter = new RPC.Eth.Filters.EthNewBlockFilter(null);
         }
@@ -797,7 +797,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthNewFilter _ethNewFilter;
 
-        public EthNewFilterUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthNewFilterUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethNewFilter = new RPC.Eth.Filters.EthNewFilter(null);
         }
@@ -814,7 +814,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthNewPendingTransactionFilter _ethNewPendingTransactionFilter;
 
-        public EthNewPendingTransactionFilterUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthNewPendingTransactionFilterUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethNewPendingTransactionFilter = new RPC.Eth.Filters.EthNewPendingTransactionFilter(null);
         }
@@ -831,7 +831,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Filters.EthUninstallFilter _ethUninstallFilter;
 
-        public EthUninstallFilterUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthUninstallFilterUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethUninstallFilter = new RPC.Eth.Filters.EthUninstallFilter(null);
         }
@@ -848,7 +848,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Compilation.EthCompileLLL _ethCompileLLL;
 
-        public EthCompileLLLUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthCompileLLLUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethCompileLLL = new RPC.Eth.Compilation.EthCompileLLL(null);
         }
@@ -865,7 +865,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Compilation.EthCompileSerpent _ethCompileSerpent;
 
-        public EthCompileSerpentUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthCompileSerpentUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethCompileSerpent = new RPC.Eth.Compilation.EthCompileSerpent(null);
         }
@@ -882,7 +882,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Compilation.EthCompileSolidity _ethCompileSolidity;
 
-        public EthCompileSolidityUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthCompileSolidityUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethCompileSolidity = new RPC.Eth.Compilation.EthCompileSolidity(null);
         }
@@ -899,7 +899,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Compilation.EthGetCompilers _ethGetCompilers;
 
-        public EthGetCompilersUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetCompilersUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetCompilers = new RPC.Eth.Compilation.EthGetCompilers(null);
         }
@@ -916,7 +916,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Blocks.EthBlockNumber _ethBlockNumber;
 
-        public EthBlockNumberUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthBlockNumberUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethBlockNumber = new RPC.Eth.Blocks.EthBlockNumber(null);
         }
@@ -933,7 +933,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Blocks.EthGetBlockWithTransactionsByHash _ethGetBlockWithTransactionsByHash;
 
-        public EthGetBlockWithTransactionsByHashUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetBlockWithTransactionsByHashUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetBlockWithTransactionsByHash = new RPC.Eth.Blocks.EthGetBlockWithTransactionsByHash(null);
         }
@@ -950,7 +950,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Blocks.EthGetBlockWithTransactionsHashesByHash _ethGetBlockWithTransactionsHashesByHash;
 
-        public EthGetBlockWithTransactionsHashesByHashUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetBlockWithTransactionsHashesByHashUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetBlockWithTransactionsHashesByHash = new RPC.Eth.Blocks.EthGetBlockWithTransactionsHashesByHash(null);
         }
@@ -967,7 +967,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Blocks.EthGetBlockWithTransactionsByNumber _ethGetBlockWithTransactionsByNumber;
 
-        public EthGetBlockWithTransactionsByNumberUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetBlockWithTransactionsByNumberUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetBlockWithTransactionsByNumber = new RPC.Eth.Blocks.EthGetBlockWithTransactionsByNumber(null);
         }
@@ -984,7 +984,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Blocks.EthGetBlockTransactionCountByHash _ethGetBlockTransactionCountByHash;
 
-        public EthGetBlockTransactionCountByHashUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetBlockTransactionCountByHashUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetBlockTransactionCountByHash = new RPC.Eth.Blocks.EthGetBlockTransactionCountByHash(null);
         }
@@ -1001,7 +1001,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Blocks.EthGetBlockTransactionCountByNumber _ethGetBlockTransactionCountByNumber;
 
-        public EthGetBlockTransactionCountByNumberUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetBlockTransactionCountByNumberUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetBlockTransactionCountByNumber = new RPC.Eth.Blocks.EthGetBlockTransactionCountByNumber(null);
         }
@@ -1018,7 +1018,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Blocks.EthGetBlockWithTransactionsHashesByNumber _ethGetBlockWithTransactionsHashesByNumber;
 
-        public EthGetBlockWithTransactionsHashesByNumberUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthGetBlockWithTransactionsHashesByNumberUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethGetBlockWithTransactionsHashesByNumber = new RPC.Eth.Blocks.EthGetBlockWithTransactionsHashesByNumber(null);
         }
@@ -1041,7 +1041,7 @@ namespace Nfantom.Unity
     {
         private readonly RPC.Eth.Transactions.EthFeeHistory _ethFeeHistory;
 
-        public EthFeeHistoryUnityRequest(string url, JsonSerializerSettings jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
+        public EthFeeHistoryUnityRequest(string url, JsonSerializerSettings? jsonSerializerSettings = null) : base(url, jsonSerializerSettings)
         {
             _ethFeeHistory = new RPC.Eth.Transactions.EthFeeHistory(null);
         }

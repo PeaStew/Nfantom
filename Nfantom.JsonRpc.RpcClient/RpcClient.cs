@@ -20,7 +20,7 @@ namespace Nfantom.JsonRpc.RpcClient
         private readonly Uri _baseUrl;
         private readonly HttpClientHandler _httpClientHandler;
         private readonly ILog _log;
-        private readonly JsonSerializerSettings _jsonSerializerSettings;
+        private readonly JsonSerializerSettings? _jsonSerializerSettings;
         private volatile bool _firstHttpClient;
         private HttpClient _httpClient;
         private HttpClient _httpClient2;
@@ -29,7 +29,7 @@ namespace Nfantom.JsonRpc.RpcClient
         private readonly object _lockObject = new object();
 
         public RpcClient(Uri baseUrl, AuthenticationHeaderValue authHeaderValue = null,
-            JsonSerializerSettings jsonSerializerSettings = null, HttpClientHandler httpClientHandler = null, ILog log = null)
+            JsonSerializerSettings? jsonSerializerSettings = null, HttpClientHandler httpClientHandler = null, ILog log = null)
         {
             _baseUrl = baseUrl;
 
@@ -83,7 +83,7 @@ namespace Nfantom.JsonRpc.RpcClient
         }
 
         public RpcClient(Uri baseUrl, HttpClient httpClient, AuthenticationHeaderValue authHeaderValue = null,
-           JsonSerializerSettings jsonSerializerSettings = null, ILog log = null)
+           JsonSerializerSettings? jsonSerializerSettings = null, ILog log = null)
         {
             _baseUrl = baseUrl;
 
