@@ -53,7 +53,7 @@ namespace Nfantom.JsonRpc.Client
             return result;
         }
 
-        public void SetValue(object target, object value)
+        public void SetValue(object target, object? value)
         {
             _memberInfo.SetValue(target, value);
         }
