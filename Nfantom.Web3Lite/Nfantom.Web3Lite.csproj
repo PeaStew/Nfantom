@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nfantom.BlockchainProcessing\Nfantom.BlockchainProcessing.csproj" />
+    <ProjectReference Include="..\Nfantom.Contracts\Nfantom.Contracts.csproj" />
+    <ProjectReference Include="..\Nfantom.JsonRpc.RpcClient\Nfantom.JsonRpc.RpcClient.csproj" />
+    <ProjectReference Include="..\Nfantom.Signer\Nfantom.Signer.csproj" />
+  </ItemGroup>
+
+</Project>
