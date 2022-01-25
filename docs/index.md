@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/PeaStew/Nfantom/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Nfantom is a modified fork of the [Nethereum](https://github.com/Nethereum/Nethereum) project (fork started at Nethereum v4.1.1.0), while Nethereum offers .NET support for the Ethereum blockchain, Nfantom offers similar .NET support for the [Fantom blockchain](https://fantom.foundation/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Enormous praise and thanks goes to the hard working team at Nethereum, this project will be forever in their debt. 
 
-### Markdown
+Due to changes made to the RPC calls (eth_ -> ftm_, plus new Fantom specific calls) for the Fantom node software ([Opera](https://github.com/Fantom-foundation/go-opera) which is based originally on geth) and upcoming changes to the EVM towards a new implementation called the FVM, this new fork has been created and will be continuously updated to support .NET development on the Fantom blockchain.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Nfantom will diverge from Nethereum significantly and that change has already started with the first commits due to a desire to not support all possible versions of .NET but move forward with .NET standard and .NET 5/6 and onwards. This was the main reason for the decision to fork, there is a lot of complexity in the Nethereum code in order to support obsolete versions of .NET which I suspect has increasingly diminishing use cases.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PeaStew/Nfantom/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
