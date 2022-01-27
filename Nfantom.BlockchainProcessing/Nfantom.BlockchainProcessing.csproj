@@ -3,6 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Description>Fantom blockchain processing allowing to crawl Blocks, Transactions, TransactionReceipts and Logs (Event) for storage and / or using custom handlers like queuing , search, etc</Description>
+	  <AssemblyTitle>Nethereum.ABI</AssemblyTitle>
+	  <Version>4.1.1.fantom-beta1</Version>
+	  <AssemblyName>Nethereum.BlockchainProcessing</AssemblyName>
+	  <PackageId>Nethereum.BlockchainProcessing</PackageId>
+	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

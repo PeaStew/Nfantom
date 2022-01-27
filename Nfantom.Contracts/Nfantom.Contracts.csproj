@@ -3,6 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Description>Core library to interact via RPC with Smart contracts in Fantom</Description>
+	<AssemblyTitle>Nethereum.ABI</AssemblyTitle>
+	<Version>4.1.1.fantom-beta1</Version>
+	<AssemblyName>Nethereum.ABI</AssemblyName>
+	<PackageId>Nethereum.ABI</PackageId>
+	<PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

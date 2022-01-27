@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom", "Nfantom\Nfantom.csproj", "{85F0ADDD-DB09-4137-B048-F5FE40EFFF78}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.Hex", "Nfantom.Hex\Nfantom.Hex.csproj", "{E6B2AD42-D29F-4FA7-A03C-5411E8E0FD45}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.RLP", "Nfantom.RLP\Nfantom.RLP.csproj", "{E41126C3-A01F-4BA8-BFF6-8F5357587BF2}"
@@ -67,10 +65,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{85F0ADDD-DB09-4137-B048-F5FE40EFFF78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85F0ADDD-DB09-4137-B048-F5FE40EFFF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85F0ADDD-DB09-4137-B048-F5FE40EFFF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85F0ADDD-DB09-4137-B048-F5FE40EFFF78}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E6B2AD42-D29F-4FA7-A03C-5411E8E0FD45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E6B2AD42-D29F-4FA7-A03C-5411E8E0FD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6B2AD42-D29F-4FA7-A03C-5411E8E0FD45}.Release|Any CPU.ActiveCfg = Release|Any CPU

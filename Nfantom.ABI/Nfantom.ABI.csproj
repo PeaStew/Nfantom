@@ -3,6 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Description>Encoding and decoding of ABI Types, functions, events of Ethereum contracts</Description>
+	<AssemblyTitle>Nethereum.ABI</AssemblyTitle>
+	<Version>4.1.1.fantom-beta1</Version>
+	<AssemblyName>Nethereum.ABI</AssemblyName>
+	<PackageId>Nethereum.ABI</PackageId>
+	<PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
+	  <Authors>Juan Blanco;Nethereum contributors</Authors>
+	  <PackageIconUrl>https://raw.githubusercontent.com/Nethereum/Nethereum/master/logos/logo64x64.png</PackageIconUrl>
+	  <PackageProjectUrl>https://nethereum.com</PackageProjectUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <RepositoryUrl>https://github.com/Nethereum/Nethereum</RepositoryUrl>
+	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
