@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="Nfantom.logo.BlueOnPurple.svg">
+   sodipodi:docname="Nfantom.logo.BlueOnPurple.svg"
+   inkscape:export-filename="C:\Users\peter\Source\Repos\Nfantom\Logos\Nfantom.logo.BlueOnPurple.2048x2048.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2">
     <style
@@ -63,7 +66,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.45254834"
-     inkscape:cx="1595.4836"
+     inkscape:cx="1226.4622"
      inkscape:cy="788.401"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -82,7 +85,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -173,5 +176,5 @@
            height="172.35728"
            width="201.0835"
            id="rect4946" /></flowRegion><flowPara
-         id="flowPara4948"></flowPara></flowRoot>  </g>
+         id="flowPara4948" /></flowRoot>  </g>
 </svg>

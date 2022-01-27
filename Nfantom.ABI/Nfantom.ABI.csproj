@@ -12,9 +12,9 @@
 	<PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
 	  <Authors>Juan Blanco;Nethereum contributors</Authors>
 	  <PackageIconUrl>https://raw.githubusercontent.com/Nethereum/Nethereum/master/logos/logo64x64.png</PackageIconUrl>
-	  <PackageProjectUrl>https://nethereum.com</PackageProjectUrl>
+	  <PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
 	  <RepositoryType>git</RepositoryType>
-	  <RepositoryUrl>https://github.com/Nethereum/Nethereum</RepositoryUrl>
+	  <RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
 	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
   </PropertyGroup>
 
