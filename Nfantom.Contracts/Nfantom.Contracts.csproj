@@ -5,11 +5,17 @@
     <Nullable>enable</Nullable>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<Description>Core library to interact via RPC with Smart contracts in Fantom</Description>
-	<AssemblyTitle>Nethereum.ABI</AssemblyTitle>
-	<Version>4.1.1.fantom-beta1</Version>
-	<AssemblyName>Nethereum.ABI</AssemblyName>
-	<PackageId>Nethereum.ABI</PackageId>
-	<PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
+	  <AssemblyTitle>Nethereum.Contracts</AssemblyTitle>
+	  <AssemblyName>Nethereum.Contracts</AssemblyName>
+	  <PackageId>Nethereum.Contracts</PackageId>
+	  <Version>4.1.1.fantom-beta1</Version>
+	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
+	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
+	  <PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
+	  <PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
+	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

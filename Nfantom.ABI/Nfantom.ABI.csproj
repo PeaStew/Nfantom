@@ -5,17 +5,17 @@
     <Nullable>enable</Nullable>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<Description>Encoding and decoding of ABI Types, functions, events of Ethereum contracts</Description>
-	<AssemblyTitle>Nethereum.ABI</AssemblyTitle>
-	<Version>4.1.1.fantom-beta1</Version>
+	<AssemblyTitle>Nethereum.ABI</AssemblyTitle>	
 	<AssemblyName>Nethereum.ABI</AssemblyName>
 	<PackageId>Nethereum.ABI</PackageId>
+	<Version>4.1.1.fantom-beta1</Version>
 	<PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
-	  <Authors>Juan Blanco;Nethereum contributors</Authors>
-	  <PackageIconUrl>https://raw.githubusercontent.com/Nethereum/Nethereum/master/logos/logo64x64.png</PackageIconUrl>
-	  <PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
-	  <RepositoryType>git</RepositoryType>
-	  <RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
-	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
+	<Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
+	<PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
+	<PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
+	<RepositoryType>git</RepositoryType>
+	<RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
+	<Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
