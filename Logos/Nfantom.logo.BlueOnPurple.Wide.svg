@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="2048"
-   height="2048"
-   viewBox="0 0 541.86665 541.86668"
+   width="1280"
+   height="640"
+   viewBox="0 0 338.66666 169.33334"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="Nfantom.logo.BlueOnPurple.svg"
-   inkscape:export-filename="C:\Users\peter\Source\Repos\Nfantom\Logos\Nfantom.logo.BlueOnPurple.png"
-   inkscape:export-xdpi="230.20312"
-   inkscape:export-ydpi="230.20312">
+   sodipodi:docname="Nfantom.logo.BlueOnPurple.Wide.svg"
+   inkscape:export-filename="C:\Users\peter\Source\Repos\Nfantom\Logos\Nfantom.logo.BlueOnPurple.Wide.1280x640.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2">
     <style
@@ -66,7 +66,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.45254834"
-     inkscape:cx="1226.4622"
+     inkscape:cx="493.94377"
      inkscape:cy="788.401"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -76,7 +76,10 @@
      inkscape:window-height="1693"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:measure-start="508.233,377.86"
+     inkscape:measure-end="0,0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -85,7 +88,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -93,12 +96,12 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="BlueOnPurple"
-     transform="translate(0,244.86669)"
+     transform="translate(0,-127.66664)"
      style="display:inline">
     <g
        style="display:inline"
        id="g4998"
-       transform="translate(-599.04868,19.51572)">
+       transform="matrix(0.16920137,0,0,0.16920137,-92.398073,211.22489)">
       <circle
          style="fill:#512bd4;fill-opacity:1;stroke-width:16.93333435"
          class="cls-2"
@@ -120,12 +123,36 @@
            id="path4824-4" />
       </g>
     </g>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot835"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Dhyana;-inkscape-font-specification:Dhyana;letter-spacing:0px;word-spacing:0px;fill:#512bd4;fill-opacity:1;stroke:none;"
+       transform="matrix(0.26458334,0,0,0.26458334,-27.034768,146.50565)"><flowRegion
+         id="flowRegion837"
+         style="fill:#512bd4;fill-opacity:1;"><rect
+           id="rect839"
+           width="1009.8369"
+           height="291.68152"
+           x="494.97476"
+           y="156.07379"
+           style="fill:#512bd4;fill-opacity:1;" /></flowRegion><flowPara
+         id="flowPara841"
+         style="font-weight:bold;font-size:192px;fill:#512bd4;fill-opacity:1;">Nfantom</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot843"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:Dhyana;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Dhyana;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion845"><rect
+           id="rect847"
+           width="658.49316"
+           height="121.53398"
+           x="749.09125"
+           y="178.17088" /></flowRegion><flowPara
+         id="flowPara849"></flowPara></flowRoot>  </g>
   <g
      inkscape:label="PurpleOnBlue"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,244.86669)"
+     transform="translate(0,-127.66664)"
      style="display:none">
     <g
        id="g5021">
