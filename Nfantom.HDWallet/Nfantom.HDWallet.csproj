@@ -34,8 +34,8 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md"/>
-	  <None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\"/>
+	  <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+	  <None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Nfantom.Web3.Accounts\Nfantom.Web3.Accounts.csproj" />
     <ProjectReference Include="..\Nfantom.Web3\Nfantom.Web3.csproj" />
   </ItemGroup>
 

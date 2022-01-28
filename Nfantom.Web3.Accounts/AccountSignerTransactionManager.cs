@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using Nethereum.Web3.Accounts;
 using Nfantom.Hex.HexConvertors.Extensions;
 using Nfantom.Hex.HexTypes;
 using Nfantom.JsonRpc.Client;

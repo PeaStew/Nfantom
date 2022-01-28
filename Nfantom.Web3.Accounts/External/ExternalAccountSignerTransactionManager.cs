@@ -11,7 +11,7 @@ using Nfantom.RPC.TransactionManagers;
 using Nfantom.Signer;
 using Nfantom.Util;
 
-namespace Nfantom.Web3.Accounts
+namespace Nfantom.Web3.Accounts.External
 {
     public class ExternalAccountSignerTransactionManager : TransactionManagerBase
     {

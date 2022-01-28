@@ -27,11 +27,15 @@
 		<None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md"/>
 		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\"/>
 	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Nfantom.Util" Version="4.1.1-fantom-beta1" />
+	</ItemGroup>
+	
   <ItemGroup>
     <ProjectReference Include="..\Nfantom.KeyStore\Nfantom.KeyStore.csproj" />
     <ProjectReference Include="..\Nfantom.RPC\Nfantom.RPC.csproj" />
     <ProjectReference Include="..\Nfantom.Signer\Nfantom.Signer.csproj" />
-    <ProjectReference Include="..\Nfantom.Util\Nfantom.Util.csproj" />
   </ItemGroup>
 
 </Project>

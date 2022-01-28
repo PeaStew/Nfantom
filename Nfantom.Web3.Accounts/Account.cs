@@ -5,9 +5,8 @@ using Nfantom.RPC.Accounts;
 using Nfantom.RPC.NonceServices;
 using Nfantom.RPC.TransactionManagers;
 using Nfantom.Signer;
-using Nfantom.Web3.Accounts;
 
-namespace Nethereum.Web3.Accounts
+namespace Nfantom.Web3.Accounts
 {
     public class Account : IAccount
     {
@@ -17,7 +16,7 @@ namespace Nethereum.Web3.Accounts
 #if !PCL
         public static Account LoadFromKeyStoreFile(string filePath, string password)
         {
-            var keyStoreService = new Nfantom.KeyStore.KeyStoreService();
+            var keyStoreService = new KeyStoreService();
             var key = keyStoreService.DecryptKeyStoreFromFile(password, filePath);
             return new Account(key);
         }
