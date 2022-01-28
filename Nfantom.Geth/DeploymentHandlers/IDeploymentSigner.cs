@@ -1,7 +1,7 @@
-﻿using Nfantom.Geth;
+﻿using Nfantom.Opera;
 using System.Threading.Tasks;
 
-namespace Nfantom.Geth.DeploymentHandlers
+namespace Nfantom.Opera.DeploymentHandlers
 {
     public interface IDeploymentSigner<TContractDeploymentMessage> where TContractDeploymentMessage : ContractDeploymentMessage, new()
     {

@@ -1,14 +1,15 @@
 ﻿using Nfantom.Contracts;
-using Nfantom.Geth.Extensions;
 using Nfantom.Geth.TransactionHandlers;
 using Nfantom.Hex.HexTypes;
+using Nfantom.Opera.Extensions;
+using Nfantom.Opera.TransactionHandlers;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.TransactionManagers;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
 #if !DOTNET35
     public class ContractTransactionHandler<TContractMessage> : ContractTransactionHandlerBase, IContractTransactionHandler<TContractMessage> where TContractMessage : FunctionMessage, new()

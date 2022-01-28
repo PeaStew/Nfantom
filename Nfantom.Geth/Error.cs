@@ -1,9 +1,9 @@
 ﻿using System;
 using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.ABI.Model;
-using Nfantom.Geth.Extensions;
+using Nfantom.Opera.Extensions;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public class Error<TError> : ErrorBase where TError : class, IErrorDTO, new()
     {

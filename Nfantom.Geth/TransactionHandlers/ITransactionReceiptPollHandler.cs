@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth;
+using Nfantom.Opera;
 
-namespace Nfantom.Geth.TransactionHandlers
+namespace Nfantom.Opera.TransactionHandlers
 {
     public interface ITransactionReceiptPollHandler<TFunctionMessage> where TFunctionMessage : FunctionMessage, new()
     {

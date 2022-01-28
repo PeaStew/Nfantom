@@ -1,9 +1,9 @@
 ﻿using System.Numerics;
 using Nfantom.Hex.HexTypes;
 using Nfantom.Util;
-using Nfantom.Geth.CQS;
+using Nfantom.Opera.CQS;
 
-namespace Nfantom.Geth.Extensions
+namespace Nfantom.Opera.Extensions
 {
     public static class ContractMessageHexBigIntegerExtensions
     {

@@ -9,7 +9,7 @@ using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
 using Newtonsoft.Json.Linq;
 
-namespace Nfantom.Geth.Builders
+namespace Nfantom.Opera.Builders
 {
     public abstract class FunctionBuilderBase
     {

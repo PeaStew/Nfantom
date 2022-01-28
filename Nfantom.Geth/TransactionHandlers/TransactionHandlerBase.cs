@@ -1,8 +1,9 @@
 ﻿using Nfantom.RPC.TransactionManagers;
-using Nfantom.Geth.ContractHandlers;
-using Nfantom.Geth.MessageEncodingServices;
+using Nfantom.Opera.ContractHandlers;
+using Nfantom.Opera;
+using Nfantom.Opera.MessageEncodingServices;
 
-namespace Nfantom.Geth.TransactionHandlers
+namespace Nfantom.Opera.TransactionHandlers
 {
 #if !DOTNET35
     public abstract class TransactionHandlerBase<TFunctionMessage> : ContractTransactionHandlerBase

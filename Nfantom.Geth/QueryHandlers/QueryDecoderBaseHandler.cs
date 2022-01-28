@@ -1,9 +1,10 @@
 ﻿using System.Threading.Tasks;
 using Nfantom.JsonRpc.Client;
+using Nfantom.Opera;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Transactions;
 
-namespace Nfantom.Geth.QueryHandlers
+namespace Nfantom.Opera.QueryHandlers
 {
 #if !DOTNET35
     public abstract class QueryDecoderBaseHandler<TFunctionMessage, TFunctionOutput> :

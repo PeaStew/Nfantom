@@ -3,11 +3,11 @@ using Nfantom.ABI.Model;
 using Nfantom.Hex.HexConvertors.Extensions;
 using Nfantom.JsonRpc.Client;
 using Newtonsoft.Json.Linq;
-using Nfantom.Geth.Builders;
-using Nfantom.Geth.Extensions;
 using System.Collections.Generic;
+using Nfantom.Opera.Builders;
+using Nfantom.Opera.Extensions;
 
-namespace Nfantom.Geth.Extensions
+namespace Nfantom.Opera.Extensions
 {
     public static class ErrorExtensions
     {

@@ -1,6 +1,6 @@
 ﻿using Nfantom.RPC.Eth.DTOs;
 
-namespace Nfantom.Geth.Builders
+namespace Nfantom.Opera.Builders
 {
     public class FilterInputBuilder
     {

@@ -1,9 +1,8 @@
 ﻿using Nfantom.JsonRpc.Client;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Transactions;
-using Nfantom.Geth;
 
-namespace Nfantom.Geth.QueryHandlers
+namespace Nfantom.Opera.QueryHandlers
 {
 #if !DOTNET35
 

@@ -6,7 +6,7 @@ using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Services;
 using Nfantom.RPC.Eth.Transactions;
 
-namespace Nfantom.Geth.Services
+namespace Nfantom.Opera.Services
 {
     public class EthGetContractTransactionErrorReason : IEthGetContractTransactionErrorReason
     {

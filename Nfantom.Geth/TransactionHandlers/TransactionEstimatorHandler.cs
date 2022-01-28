@@ -6,7 +6,7 @@ using Nfantom.JsonRpc.Client;
 using Nfantom.RPC.Eth.Transactions;
 using Nfantom.RPC.TransactionManagers;
 
-namespace Nfantom.Geth.TransactionHandlers
+namespace Nfantom.Opera.TransactionHandlers
 {
 #if !DOTNET35
 

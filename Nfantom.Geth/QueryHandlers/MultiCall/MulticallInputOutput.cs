@@ -1,9 +1,9 @@
 ﻿using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.Hex.HexConvertors.Extensions;
-using Nfantom.Geth;
-using Nfantom.Geth.Extensions;
+using Nfantom.Opera;
+using Nfantom.Opera.Extensions;
 
-namespace Nfantom.Geth.QueryHandlers.MultiCall
+namespace Nfantom.Opera.QueryHandlers.MultiCall
 {
     public class MulticallInputOutput<TFunctionMessage, TFunctionOutput> : IMulticallInputOutput
         where TFunctionMessage : FunctionMessage, new()

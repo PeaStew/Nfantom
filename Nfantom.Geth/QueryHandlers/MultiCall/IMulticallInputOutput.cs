@@ -1,4 +1,4 @@
-﻿namespace Nfantom.Geth.QueryHandlers.MultiCall
+﻿namespace Nfantom.Opera.QueryHandlers.MultiCall
 {
     public interface IMulticallInputOutput
     {

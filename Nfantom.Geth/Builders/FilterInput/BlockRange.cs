@@ -2,7 +2,7 @@
 using System;
 using System.Numerics;
 
-namespace Nfantom.Geth.Builders.FilterInput
+namespace Nfantom.Opera.Builders.FilterInput
 {
     public struct BlockRange :
         IEquatable<BlockRange>

@@ -1,9 +1,10 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using Nfantom.Opera;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.TransactionManagers;
 
-namespace Nfantom.Geth.TransactionHandlers
+namespace Nfantom.Opera.TransactionHandlers
 {
 #if !DOTNET35
     public class TransactionReceiptPollHandler<TFunctionMessage> :

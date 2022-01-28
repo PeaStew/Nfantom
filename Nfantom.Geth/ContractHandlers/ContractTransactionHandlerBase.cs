@@ -2,7 +2,7 @@
 using Nfantom.RPC.Accounts;
 using Nfantom.RPC.TransactionManagers;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
 #if !DOTNET35
     public abstract class ContractTransactionHandlerBase

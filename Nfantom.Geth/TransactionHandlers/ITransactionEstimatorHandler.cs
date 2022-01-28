@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Nfantom.Hex.HexTypes;
 
-namespace Nfantom.Geth.TransactionHandlers
+namespace Nfantom.Opera.TransactionHandlers
 {
     public interface ITransactionEstimatorHandler<TFunctionMessage> where TFunctionMessage : FunctionMessage, new()
     {

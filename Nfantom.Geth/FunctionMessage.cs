@@ -1,6 +1,6 @@
-﻿using Nfantom.Geth.CQS;
+﻿using Nfantom.Opera.CQS;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public class FunctionMessage : ContractMessageBase
     {

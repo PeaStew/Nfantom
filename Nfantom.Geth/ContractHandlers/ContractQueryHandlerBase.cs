@@ -2,9 +2,9 @@
 using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.Hex.HexConvertors.Extensions;
 using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth.QueryHandlers;
+using Nfantom.Opera.QueryHandlers;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
 #if !DOTNET35
 

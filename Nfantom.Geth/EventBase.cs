@@ -1,16 +1,16 @@
 using Newtonsoft.Json.Linq;
 using Nfantom.ABI.Model;
-using Nfantom.Geth.Builders;
-using Nfantom.Geth.Extensions;
 using Nfantom.Hex.HexTypes;
 using Nfantom.JsonRpc.Client;
+using Nfantom.Opera.Builders;
+using Nfantom.Opera.Extensions;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Filters;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
 
     public class EventBase
@@ -44,7 +44,7 @@ namespace Nfantom.Geth
 
         public Task<HexBigInteger> CreateFilterAsync(BlockParameter fromBlock = null)
         {
-            var newFilterInput = CreateFilterInput(fromBlock, (BlockParameter)null);
+            var newFilterInput = CreateFilterInput(fromBlock, null);
             return EthNewFilter.SendRequestAsync(newFilterInput);
         }
 

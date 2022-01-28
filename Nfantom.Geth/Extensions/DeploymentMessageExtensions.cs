@@ -1,10 +1,10 @@
 ﻿using Nfantom.ABI.FunctionEncoding;
 using Nfantom.Hex.HexConvertors.Extensions;
 using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth;
-using Nfantom.Geth.MessageEncodingServices;
+using Nfantom.Opera.MessageEncodingServices;
+using Nfantom.Opera;
 
-namespace Nfantom.Geth.Extensions
+namespace Nfantom.Opera.Extensions
 {
     /// <summary>
     /// Please use Nethereum.Contracts.DeploymentMessageExtensions instead (keeping this class as a small workaround to move extensions to contracts namespaces)

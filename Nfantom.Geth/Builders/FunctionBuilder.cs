@@ -5,7 +5,7 @@ using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.TransactionTypes;
 
-namespace Nfantom.Geth.Builders
+namespace Nfantom.Opera.Builders
 {
     public class FunctionBuilder : FunctionBuilderBase
     {
@@ -119,12 +119,12 @@ namespace Nfantom.Geth.Builders
 
         public TFunctionInput DecodeFunctionInput(TFunctionInput functionInput, TransactionInput transactionInput)
         {
-            return FunctionCallDecoder.DecodeFunctionInput<TFunctionInput>(functionInput, FunctionABI.Sha3Signature, transactionInput.Data);
+            return FunctionCallDecoder.DecodeFunctionInput(functionInput, FunctionABI.Sha3Signature, transactionInput.Data);
         }
 
         public TFunctionInput DecodeFunctionInput(TFunctionInput functionInput, string data)
         {
-            return FunctionCallDecoder.DecodeFunctionInput<TFunctionInput>(functionInput, FunctionABI.Sha3Signature, data);
+            return FunctionCallDecoder.DecodeFunctionInput(functionInput, FunctionABI.Sha3Signature, data);
         }
 
         public TransactionInput CreateTransactionInput(TFunctionInput functionInput, string from)

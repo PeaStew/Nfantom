@@ -2,9 +2,8 @@
 using System.Threading.Tasks;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.TransactionManagers;
-using Nfantom.Geth;
 
-namespace Nfantom.Geth.DeploymentHandlers
+namespace Nfantom.Opera.DeploymentHandlers
 {
 #if !DOTNET35
     public class

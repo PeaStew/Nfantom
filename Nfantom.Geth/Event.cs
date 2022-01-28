@@ -2,15 +2,15 @@ using Newtonsoft.Json.Linq;
 using Nfantom.ABI.FunctionEncoding;
 using Nfantom.ABI.Model;
 using Nfantom.Geth.Exceptions;
-using Nfantom.Geth.Extensions;
 using Nfantom.Hex.HexTypes;
 using Nfantom.JsonRpc.Client;
+using Nfantom.Opera.Extensions;
 using Nfantom.RPC.Eth.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public class Event : EventBase
     {

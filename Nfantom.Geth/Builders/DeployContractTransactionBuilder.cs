@@ -5,7 +5,7 @@ using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.TransactionTypes;
 
-namespace Nfantom.Geth.Builders
+namespace Nfantom.Opera.Builders
 {
     public class DeployContractTransactionBuilder
     {

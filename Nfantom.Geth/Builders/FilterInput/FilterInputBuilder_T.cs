@@ -1,13 +1,13 @@
 ﻿using Nfantom.ABI.Model;
 using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth.Builders;
-using Nfantom.Geth.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Reflection;
+using Nfantom.Opera.Extensions;
+using Nfantom.Opera.Builders;
 
-namespace Nfantom.Geth.Builders.FilterInput
+namespace Nfantom.Opera.Builders.FilterInput
 {
     /// <summary>
     /// Builds a filter based on indexed parameters on an event DTO query template.

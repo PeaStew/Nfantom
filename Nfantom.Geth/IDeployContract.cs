@@ -4,7 +4,7 @@ using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.TransactionManagers;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public interface IDeployContract
     {

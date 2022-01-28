@@ -1,8 +1,9 @@
 ﻿using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Transactions;
-using Nfantom.Geth.QueryHandlers;
+using Nfantom.Opera.QueryHandlers;
+using Nfantom.Opera;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
 
 #if !DOTNET35

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.ABI.Model;
 
-namespace Nfantom.Geth.Builders
+namespace Nfantom.Opera.Builders
 {
     public static class ABITypedRegistry
     {

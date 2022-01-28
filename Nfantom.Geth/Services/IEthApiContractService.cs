@@ -1,10 +1,11 @@
 ﻿using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.RPC;
 using Nfantom.RPC.Eth.Transactions;
-using Nfantom.Geth.ContractHandlers;
-using Nfantom.Geth.QueryHandlers.MultiCall;
+using Nfantom.Opera.ContractHandlers;
+using Nfantom.Opera;
+using Nfantom.Opera.QueryHandlers.MultiCall;
 
-namespace Nfantom.Geth.Services
+namespace Nfantom.Opera.Services
 {
     public interface IEthApiContractService : IEthApiService
     {

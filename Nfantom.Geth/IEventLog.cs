@@ -1,6 +1,6 @@
 using Nfantom.RPC.Eth.DTOs;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public interface IEventLog
     {

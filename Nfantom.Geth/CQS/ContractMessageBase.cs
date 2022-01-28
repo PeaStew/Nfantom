@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Numerics;
 
-namespace Nfantom.Geth.CQS
+namespace Nfantom.Opera.CQS
 {
     /// <summary>
     /// Base class used for the messages and descriptions of Deployments and Functions (Queries, Transactions)

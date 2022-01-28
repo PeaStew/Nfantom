@@ -1,7 +1,7 @@
 ﻿using Nfantom.ABI.FunctionEncoding;
 using Nfantom.ABI.FunctionEncoding.Attributes;
 
-namespace Nfantom.Geth.Extensions
+namespace Nfantom.Opera.Extensions
 {
     public static class FunctionOuputDTOExtensions
     {

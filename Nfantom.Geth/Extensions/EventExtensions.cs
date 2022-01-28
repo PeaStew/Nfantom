@@ -12,14 +12,14 @@ using Nfantom.RPC.Eth.DTOs;
 using Nfantom.Util;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Nfantom.Geth.Builders;
-using Nfantom.Geth.Services;
-using Nfantom.Geth.Extensions;
-using Nfantom.Geth.Builders.FilterInput;
 using Nfantom.Geth.Comparers;
 using Nfantom.RPC.Eth.DTOs.ValueObjects;
+using Nfantom.Opera.Extensions;
+using Nfantom.Opera.Builders;
+using Nfantom.Opera.Builders.FilterInput;
+using Nfantom.Opera.Services;
 
-namespace Nfantom.Geth.Extensions
+namespace Nfantom.Opera.Extensions
 {
 
     public static class EventExtensions
@@ -61,7 +61,7 @@ namespace Nfantom.Geth.Extensions
 
             if (!eventABI.HasSameNumberOfIndexes(log)) return false;
 
-            return IsLogForEvent(log, eventABI.Sha3Signature);
+            return log.IsLogForEvent(eventABI.Sha3Signature);
         }
 
         public static bool IsLogForEvent(this FilterLog log, string signature)
@@ -498,7 +498,7 @@ namespace Nfantom.Geth.Extensions
         {
             var eventABI = ABITypedRegistry.GetEvent<TEventDTO>();
 
-            return DecodeEvent<TEventDTO>(eventDTO, eventABI, log);
+            return eventDTO.DecodeEvent(eventABI, log);
         }
 
         public static TEventDTO DecodeEvent<TEventDTO>(this TEventDTO eventDTO, EventABI eventABI, FilterLog log) where TEventDTO : IEventDTO

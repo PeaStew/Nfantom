@@ -4,10 +4,10 @@ using Nfantom.ABI.Decoders;
 using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth.CQS;
-using Nfantom.Geth.Services;
+using Nfantom.Opera.CQS;
+using Nfantom.Opera.Services;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
     public class ContractHandler
     {

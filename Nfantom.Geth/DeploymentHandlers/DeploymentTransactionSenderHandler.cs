@@ -1,9 +1,9 @@
-﻿using Nfantom.Geth.Extensions;
-using Nfantom.Hex.HexTypes;
+﻿using Nfantom.Hex.HexTypes;
+using Nfantom.Opera.Extensions;
 using Nfantom.RPC.TransactionManagers;
 using System.Threading.Tasks;
 
-namespace Nfantom.Geth.DeploymentHandlers
+namespace Nfantom.Opera.DeploymentHandlers
 {
 #if !DOTNET35
     public class DeploymentTransactionSenderHandler<TContractDeploymentMessage> : DeploymentHandlerBase<TContractDeploymentMessage>,

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Nfantom.Geth.Services
+namespace Nfantom.Opera.Services
 {
     public interface IEthGetContractTransactionErrorReason
     {

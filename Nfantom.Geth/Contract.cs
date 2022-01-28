@@ -6,10 +6,10 @@ using Nfantom.RPC;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Filters;
 using System.Linq;
-using Nfantom.Geth.Builders;
-using Nfantom.Geth.Extensions;
+using Nfantom.Opera.Builders;
+using Nfantom.Opera.Extensions;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public class Contract
     {

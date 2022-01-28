@@ -1,4 +1,4 @@
-﻿namespace Nfantom.Geth
+﻿namespace Nfantom.Opera
 {
     public enum ContractOperationType
     {

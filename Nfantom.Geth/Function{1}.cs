@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth.Builders;
+using Nfantom.Opera.Builders;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public class Function<TFunctionInput> : FunctionBase
     {

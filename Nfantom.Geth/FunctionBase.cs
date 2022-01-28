@@ -9,9 +9,9 @@ using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Transactions;
 using Nfantom.RPC.TransactionManagers;
 using Newtonsoft.Json.Linq;
-using Nfantom.Geth.Builders;
+using Nfantom.Opera.Builders;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
 
     public abstract class FunctionBase

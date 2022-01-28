@@ -1,6 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using Nfantom.Opera;
+using System.Threading.Tasks;
 
-namespace Nfantom.Geth.TransactionHandlers
+namespace Nfantom.Opera.TransactionHandlers
 {
     public interface ITransactionSigner<TFunctionMessage> where TFunctionMessage : FunctionMessage, new()
     {

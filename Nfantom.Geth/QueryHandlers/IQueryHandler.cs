@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Nfantom.RPC.Eth.DTOs;
 
-namespace Nfantom.Geth.QueryHandlers
+namespace Nfantom.Opera.QueryHandlers
 {
     public interface IQueryHandler<TFunctionMessage, TOutput>
         where TFunctionMessage : FunctionMessage, new()

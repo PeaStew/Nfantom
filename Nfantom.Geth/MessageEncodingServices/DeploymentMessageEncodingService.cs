@@ -1,10 +1,10 @@
 ﻿using Nfantom.ABI.FunctionEncoding;
-using Nfantom.Geth.Builders;
-using Nfantom.Geth.Extensions;
 using Nfantom.Hex.HexConvertors.Extensions;
+using Nfantom.Opera.Builders;
+using Nfantom.Opera.Extensions;
 using Nfantom.RPC.Eth.DTOs;
 
-namespace Nfantom.Geth.MessageEncodingServices
+namespace Nfantom.Opera.MessageEncodingServices
 {
     public class DeploymentMessageEncodingService<TContractDeployment> :
         IContractMessageTransactionInputCreator<TContractDeployment> where TContractDeployment : ContractDeploymentMessage
@@ -76,11 +76,11 @@ namespace Nfantom.Geth.MessageEncodingServices
         {
             if (ByteCodeSwarmExtractor.HasSwarmAddress(data))
             {
-                return ConstructorCallDecoder.DecodeConstructorParameters<TContractDeployment>(contractMessage, data);
+                return ConstructorCallDecoder.DecodeConstructorParameters(contractMessage, data);
             }
             else // fallback to "our" bytecode.. 
             {
-                return ConstructorCallDecoder.DecodeConstructorParameters<TContractDeployment>(contractMessage,
+                return ConstructorCallDecoder.DecodeConstructorParameters(contractMessage,
                     contractMessage.ByteCode, data);
             }
         }

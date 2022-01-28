@@ -1,9 +1,9 @@
 ﻿using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth.Extensions;
-using Nfantom.Geth.MessageEncodingServices;
 using Nfantom.RPC.Eth.DTOs.ValueObjects;
+using Nfantom.Opera;
+using Nfantom.Opera.MessageEncodingServices;
 
-namespace Nfantom.Geth.Extensions
+namespace Nfantom.Opera.Extensions
 {
     public static class FunctionMessageExtensions
     {

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
     public interface IContractTransactionHandler<TContractMessage> where TContractMessage : FunctionMessage, new()
     {

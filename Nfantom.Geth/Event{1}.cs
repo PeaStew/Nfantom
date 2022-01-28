@@ -2,14 +2,14 @@
 using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.ABI.Model;
 using Nfantom.Geth.Exceptions;
-using Nfantom.Geth.Extensions;
 using Nfantom.Hex.HexTypes;
 using Nfantom.JsonRpc.Client;
+using Nfantom.Opera.Extensions;
 using Nfantom.RPC.Eth.DTOs;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     /// <summary>
     /// Event handler for a typed EventMessage to create filters and access to logs

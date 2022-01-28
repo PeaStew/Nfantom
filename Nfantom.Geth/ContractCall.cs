@@ -5,7 +5,7 @@ using Nfantom.JsonRpc.Client;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Transactions;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public class ContractCall
     {

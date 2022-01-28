@@ -2,7 +2,7 @@
 using System.Reflection;
 using Nfantom.ABI.FunctionEncoding.Attributes;
 
-namespace Nfantom.Geth.Builders.FilterInput
+namespace Nfantom.Opera.Builders.FilterInput
 {
     internal class TopicFilter
     {

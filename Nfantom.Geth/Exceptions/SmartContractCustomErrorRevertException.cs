@@ -1,7 +1,7 @@
-﻿using Nfantom.Geth.Extensions;
+﻿using Nfantom.Opera.Extensions;
 using System;
 
-namespace Nfantom.Geth.Exceptions
+namespace Nfantom.Opera.Exceptions
 {
     public class SmartContractCustomErrorRevertException : Exception
     {

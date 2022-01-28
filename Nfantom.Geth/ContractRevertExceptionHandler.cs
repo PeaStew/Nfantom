@@ -6,7 +6,7 @@ using Nfantom.RPC.Eth.Transactions;
 using Newtonsoft.Json.Linq;
 using Nfantom.Geth.Exceptions;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public class ContractRevertExceptionHandler
     {

@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Nfantom.Geth;
 using Nfantom.RPC.Eth.DTOs.Comparers;
 
-namespace Nfantom.Geth.Comparers
+namespace Nfantom.Opera.Comparers
 {
     public class EventLogBlockNumberTransactionIndexComparer : IComparer<object>
     {

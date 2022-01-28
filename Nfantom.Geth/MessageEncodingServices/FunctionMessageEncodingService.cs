@@ -1,10 +1,10 @@
-﻿using Nfantom.Geth.Builders;
-using Nfantom.Geth.CQS;
-using Nfantom.Geth.Extensions;
+﻿using Nfantom.Opera.Builders;
+using Nfantom.Opera.CQS;
+using Nfantom.Opera.Extensions;
 using Nfantom.RPC.Eth.DTOs;
 using System;
 
-namespace Nfantom.Geth.MessageEncodingServices
+namespace Nfantom.Opera.MessageEncodingServices
 {
     public class FunctionMessageEncodingService<TContractFunction> :
         IContractMessageTransactionInputCreator<TContractFunction>,

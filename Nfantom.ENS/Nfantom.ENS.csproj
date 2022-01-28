@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>FNS Nfantom Name service library</Description>
+	  <Description>Nfantom - FNS Name service library</Description>
 	  <AssemblyTitle>Nethereum.ENS</AssemblyTitle>
 	  <AssemblyName>Nethereum.ENS</AssemblyName>
 	  <PackageId>Nethereum.ENS</PackageId>

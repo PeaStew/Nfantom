@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Nfantom.ABI.FunctionEncoding;
 using Nfantom.ABI.Model;
 using Nfantom.JsonRpc.Client;
-using Nfantom.Geth.Builders;
-using Nfantom.Geth.Extensions;
+using Nfantom.Opera.Builders;
+using Nfantom.Opera.Extensions;
 
-namespace Nfantom.Geth
+namespace Nfantom.Opera
 {
     public class ErrorBase
     {

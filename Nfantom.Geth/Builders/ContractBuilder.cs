@@ -6,7 +6,7 @@ using Nfantom.ABI.Model;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.Hex.HexConvertors.Extensions;
 
-namespace Nfantom.Geth.Builders
+namespace Nfantom.Opera.Builders
 {
     public class ContractBuilder
     {

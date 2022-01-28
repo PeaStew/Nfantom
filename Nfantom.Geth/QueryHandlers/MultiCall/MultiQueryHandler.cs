@@ -5,10 +5,11 @@ using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.Contracts;
 using Nfantom.JsonRpc.Client;
 using Nfantom.RPC.Eth.DTOs;
+using Nfantom.Opera.QueryHandlers;
+using Nfantom.Opera;
 using Nfantom.Geth;
-using Nfantom.Geth.QueryHandlers;
 
-namespace Nfantom.Geth.QueryHandlers.MultiCall
+namespace Nfantom.Opera.QueryHandlers.MultiCall
 {
     public partial class Call : CallBase { }
 

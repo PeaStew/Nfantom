@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Nfantom.Hex.HexTypes;
 using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth;
+using Nfantom.Opera;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
     public interface IContractDeploymentTransactionHandler<TContractDeploymentMessage> where TContractDeploymentMessage : ContractDeploymentMessage, new()
     {

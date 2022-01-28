@@ -1,11 +1,11 @@
 ﻿using Nfantom.JsonRpc.Client;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.Eth.Transactions;
-using Nfantom.Geth;
-using Nfantom.Geth.MessageEncodingServices;
 using System.Threading.Tasks;
+using Nfantom.Opera;
+using Nfantom.Opera.MessageEncodingServices;
 
-namespace Nfantom.Geth.QueryHandlers
+namespace Nfantom.Opera.QueryHandlers
 {
     public abstract class QueryHandlerBase<TFunctionMessage>
         where TFunctionMessage : FunctionMessage, new()

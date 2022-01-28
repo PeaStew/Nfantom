@@ -5,9 +5,10 @@ using Nfantom.RPC;
 using Nfantom.RPC.Eth.Transactions;
 using Nfantom.RPC.TransactionManagers;
 using Nfantom.Geth.ContractHandlers;
-using Nfantom.Geth.QueryHandlers.MultiCall;
+using Nfantom.Opera.ContractHandlers;
+using Nfantom.Opera.QueryHandlers.MultiCall;
 
-namespace Nfantom.Geth.Services
+namespace Nfantom.Opera.Services
 {
     public class EthApiContractService : EthApiService, IEthApiContractService
     {
@@ -65,14 +66,14 @@ namespace Nfantom.Geth.Services
             TContractDeploymentMessage>()
             where TContractDeploymentMessage : ContractDeploymentMessage, new()
         {
-            return new ContractDeploymentTransactionHandler<TContractDeploymentMessage>(this.TransactionManager);
+            return new ContractDeploymentTransactionHandler<TContractDeploymentMessage>(TransactionManager);
         }
 
         public IContractTransactionHandler<TContractFunctionMessage> GetContractTransactionHandler<
             TContractFunctionMessage>()
             where TContractFunctionMessage : FunctionMessage, new()
         {
-            return new ContractTransactionHandler<TContractFunctionMessage>(this.TransactionManager);
+            return new ContractTransactionHandler<TContractFunctionMessage>(TransactionManager);
         }
 
         /// <summary>

@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Nfantom.Hex.HexTypes;
-using Nfantom.Geth;
+using Nfantom.Opera;
 
-namespace Nfantom.Geth.DeploymentHandlers
+namespace Nfantom.Opera.DeploymentHandlers
 {
     public interface IDeploymentEstimatorHandler<TContractDeploymentMessage> where TContractDeploymentMessage : ContractDeploymentMessage, new()
     {

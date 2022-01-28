@@ -1,6 +1,6 @@
 using System;
 
-namespace Nfantom.Geth.Exceptions
+namespace Nfantom.Opera.Exceptions
 {
     public class FilterInputNotForEventException : Exception
     {

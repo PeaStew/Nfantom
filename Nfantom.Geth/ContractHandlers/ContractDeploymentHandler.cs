@@ -1,12 +1,12 @@
 ﻿using Nfantom.Contracts;
-using Nfantom.Geth.DeploymentHandlers;
 using Nfantom.Hex.HexTypes;
+using Nfantom.Opera.DeploymentHandlers;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.RPC.TransactionManagers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
 #if !DOTNET35
     public class ContractDeploymentTransactionHandler<TContractDeploymentMessage> : ContractTransactionHandlerBase, IContractDeploymentTransactionHandler<TContractDeploymentMessage> where TContractDeploymentMessage : ContractDeploymentMessage, new()

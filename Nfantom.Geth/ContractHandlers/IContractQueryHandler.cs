@@ -1,8 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Nfantom.ABI.FunctionEncoding.Attributes;
+using Nfantom.Opera;
 using Nfantom.RPC.Eth.DTOs;
 
-namespace Nfantom.Geth.ContractHandlers
+namespace Nfantom.Opera.ContractHandlers
 {
     public interface IContractQueryHandler<TFunctionMessage> where TFunctionMessage : FunctionMessage, new()
     {

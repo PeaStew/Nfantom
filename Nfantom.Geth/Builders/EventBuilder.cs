@@ -5,10 +5,9 @@ using Nfantom.ABI.Model;
 using Nfantom.Contracts;
 using Nfantom.RPC.Eth.DTOs;
 using Newtonsoft.Json.Linq;
-using Nfantom.Geth;
-using Nfantom.Geth.Extensions;
+using Nfantom.Opera.Extensions;
 
-namespace Nfantom.Geth.Builders
+namespace Nfantom.Opera.Builders
 {
     [Obsolete("Use the EventABI extensions instead")]
     public class EventBuilder

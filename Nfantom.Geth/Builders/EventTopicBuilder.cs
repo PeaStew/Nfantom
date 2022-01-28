@@ -3,7 +3,7 @@ using System.Linq;
 using Nfantom.ABI.Model;
 using Nfantom.Hex.HexConvertors.Extensions;
 
-namespace Nfantom.Geth.Builders
+namespace Nfantom.Opera.Builders
 {
     public class EventTopicBuilder
     {

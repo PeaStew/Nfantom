@@ -5,9 +5,10 @@ using System.Text;
 using Nfantom.ABI;
 using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.Contracts;
-using Nfantom.Geth.Extensions;
+using Nfantom.Geth;
+using Nfantom.Opera.Extensions;
 
-namespace Nfantom.Geth.TransactionHandlers.MultiSend
+namespace Nfantom.Opera.TransactionHandlers.MultiSend
 {
     [Function("multiSend")]
     public class MultiSendFunction : FunctionMessage

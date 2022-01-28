@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Nfantom.Geth.Builders.FilterInput
+namespace Nfantom.Opera.Builders.FilterInput
 {
     internal class TopicFilterContainer<T> where T : class
     {

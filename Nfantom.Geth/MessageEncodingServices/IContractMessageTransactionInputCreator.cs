@@ -1,7 +1,7 @@
 ﻿using Nfantom.RPC.Eth.DTOs;
-using Nfantom.Geth.CQS;
+using Nfantom.Opera.CQS;
 
-namespace Nfantom.Geth.MessageEncodingServices
+namespace Nfantom.Opera.MessageEncodingServices
 {
     public interface IContractMessageTransactionInputCreator<TContractMessage> : IDefaultAddressService
         where TContractMessage : ContractMessageBase
