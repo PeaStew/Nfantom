@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Description>EVM Nfantom</Description>
 	  <AssemblyTitle>Nethereum.EVM</AssemblyTitle>
 	  <AssemblyName>Nethereum.EVM</AssemblyName>
 	  <PackageId>Nethereum.EVM</PackageId>
-	  <Version>4.1.1.fantom-beta1</Version>
+	  <Version>4.1.1-fantom-beta1</Version>
 	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
 	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
 	  <PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
@@ -17,6 +17,15 @@
 	  <RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
 	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
   </PropertyGroup>
+
+	<PropertyGroup>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md"/>
+		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\"/>
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.IO.Pipes" Version="4.3.0" />
