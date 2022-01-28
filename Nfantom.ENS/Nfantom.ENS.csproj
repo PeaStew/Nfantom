@@ -5,9 +5,9 @@
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Description>Nfantom - FNS Name service library</Description>
-	  <AssemblyTitle>Nethereum.ENS</AssemblyTitle>
-	  <AssemblyName>Nethereum.ENS</AssemblyName>
-	  <PackageId>Nethereum.ENS</PackageId>
+	  <AssemblyTitle>Nfantom.ENS</AssemblyTitle>
+	  <AssemblyName>Nfantom.ENS</AssemblyName>
+	  <PackageId>Nfantom.ENS</PackageId>
 	  <Version>4.1.1-fantom-beta1</Version>
 	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
 	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>

@@ -4,10 +4,10 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>EVM Nfantom</Description>
-	  <AssemblyTitle>Nethereum.EVM</AssemblyTitle>
-	  <AssemblyName>Nethereum.EVM</AssemblyName>
-	  <PackageId>Nethereum.EVM</PackageId>
+	  <Description>Nfantom - Fantom Core Model Class Library</Description>
+	  <AssemblyTitle>Nfantom.Model</AssemblyTitle>
+	  <AssemblyName>Nfantom.Model</AssemblyName>
+	  <PackageId>Nfantom.Model</PackageId>
 	  <Version>4.1.1-fantom-beta1</Version>
 	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
 	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nfantom.Siwe.Core
+namespace Nfantom.Siwf.Core
 {
-    public class SiweMessageService
+    public class SiwfMessageService
     {
 
     }

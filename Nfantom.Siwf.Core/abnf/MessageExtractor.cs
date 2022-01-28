@@ -10,15 +10,15 @@
 
 using System;
 using System.Collections.Generic;
-using Nfantom.Siwe.Core;
+using Nfantom.Siwf.Core;
 
 internal class MessageExtractor:Visitor
 {
-    public SiweMessage SiweMessage { get; private set; }
+    public SiwfMessage SiwfMessage { get; private set; }
     public MessageExtractor()
     {
-        SiweMessage = new SiweMessage();
-        SiweMessage.Resources = new List<string>();
+        SiwfMessage = new SiwfMessage();
+        SiwfMessage.Resources = new List<string>();
     }
     public Object Visit(Rule_sign_in_with_ethereum rule)
   {
@@ -27,61 +27,61 @@ internal class MessageExtractor:Visitor
 
   public Object Visit(Rule_domain rule)
   { 
-      SiweMessage.Domain = rule.spelling;
+      SiwfMessage.Domain = rule.spelling;
       return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_address rule)
   {
-      SiweMessage.Address = rule.spelling;
+      SiwfMessage.Address = rule.spelling;
       return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_statement rule)
   {
-      SiweMessage.Statement = rule.spelling;
+      SiwfMessage.Statement = rule.spelling;
       return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_version rule)
   {
-      SiweMessage.Version = rule.spelling;
+      SiwfMessage.Version = rule.spelling;
       return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_nonce rule)
   {
-      SiweMessage.Nonce = rule.spelling;
+      SiwfMessage.Nonce = rule.spelling;
       return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_issued_at rule)
   {
-       SiweMessage.IssuedAt = rule.spelling;
+       SiwfMessage.IssuedAt = rule.spelling;
        return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_expiration_time rule)
   {
-      SiweMessage.ExpirationTime = rule.spelling;
+      SiwfMessage.ExpirationTime = rule.spelling;
         return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_not_before rule)
   {
-      SiweMessage.NotBefore = rule.spelling;
+      SiwfMessage.NotBefore = rule.spelling;
         return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_request_id rule)
   {
-      SiweMessage.RequestId = rule.spelling;
+      SiwfMessage.RequestId = rule.spelling;
         return VisitRules(rule.rules);
   }
 
   public Object Visit(Rule_chain_id rule)
   {
-      SiweMessage.ChainId = rule.spelling;
+      SiwfMessage.ChainId = rule.spelling;
         return VisitRules(rule.rules);
   }
 
@@ -94,7 +94,7 @@ internal class MessageExtractor:Visitor
   public Object Visit(Rule_resource rule)
   {
       //skip "- "
-      SiweMessage.Resources.Add(rule.spelling.Substring(2));
+      SiwfMessage.Resources.Add(rule.spelling.Substring(2));
       return VisitRules(rule.rules);
   }
 
@@ -104,7 +104,7 @@ internal class MessageExtractor:Visitor
       //first uri found not to be confused with resources
       if (_uriCount == 0)
       {
-          SiweMessage.Uri = rule.spelling;
+          SiwfMessage.Uri = rule.spelling;
           _uriCount = 1;
       }
 

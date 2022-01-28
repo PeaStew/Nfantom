@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nfantom.Siwe.Core
+namespace Nfantom.Siwf.Core
 {
-    public class SiweMessage
+    public class SiwfMessage
     {
         /// <summary>
         /// RFC 4501 dns authority that is requesting the signing.
@@ -56,7 +56,7 @@ namespace Nfantom.Siwe.Core
         /// <summary>
         /// System-specific identifier that may be used to uniquely refer to the sign-in request
         /// </summary>
-      
+
         public string RequestId { get; set; }
 
         /// <summary>
@@ -73,5 +73,5 @@ namespace Nfantom.Siwe.Core
         ///Signature of the message signed by the wallet
         /// </summary>
         public string Signature { get; set; }
-	}
+    }
 }

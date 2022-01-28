@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>EVM Nfantom</Description>
+	  <Description>Nfantom - provides the External Signing capability for Fantom transactions and Messages using Ledger Hardware wallets</Description>
 	  <AssemblyTitle>Nfantom.Signer.Ledger</AssemblyTitle>
 	  <AssemblyName>Nfantom.Signer.Ledger</AssemblyName>
 	  <PackageId>Nfantom.Signer.Ledger</PackageId>

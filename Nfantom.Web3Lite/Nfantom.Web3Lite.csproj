@@ -4,10 +4,10 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>EVM Nfantom</Description>
-	  <AssemblyTitle>Nethereum.EVM</AssemblyTitle>
-	  <AssemblyName>Nethereum.EVM</AssemblyName>
-	  <PackageId>Nethereum.EVM</PackageId>
+	  <Description>Nfantom - Web3 Class Library (light browser version, with no reference to signing crypto libraries) to interact via RPC with an Fantom client, for example opera. Including contract interaction, deployment, transaction, encoding / decoding and event filters </Description>
+	  <AssemblyTitle>Nfantom.Web3Lite</AssemblyTitle>
+	  <AssemblyName>Nfantom.Web3Lite</AssemblyName>
+	  <PackageId>Nfantom.Web3Lite</PackageId>
 	  <Version>4.1.1-fantom-beta1</Version>
 	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
 	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>

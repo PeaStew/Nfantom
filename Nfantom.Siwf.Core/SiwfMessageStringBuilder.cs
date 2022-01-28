@@ -1,9 +1,9 @@
 ﻿using System;
 using Nfantom.Util;
 
-namespace Nfantom.Siwe.Core;
+namespace Nfantom.Siwf.Core;
 
-public class SiweMessageStringBuilder
+public class SiwfMessageStringBuilder
 {
     public const string DOMAIN = "{0} wants you to sign in with your Ethereum account:";
     public const string ADDRESS = "\n{0}\n\n";
@@ -19,17 +19,17 @@ public class SiweMessageStringBuilder
     public const string RESOURCES = "\nResources:";
     public const string RESOURCE = "\n- {0}";
 
-    private static string GetDomain(SiweMessage message)
+    private static string GetDomain(SiwfMessage message)
     {
         if (string.IsNullOrEmpty(message.Domain)) throw new ArgumentException("Domain cannot be null or empty");
         return string.Format(DOMAIN, message.Domain);
     }
 
-    private static string GetAddress(SiweMessage message)
+    private static string GetAddress(SiwfMessage message)
     {
         //should this be a checksum address?
         //if (message.Address.IsEthereumChecksumAddress())
-        if(message.Address.IsValidEthereumAddressHexFormat())
+        if (message.Address.IsValidEthereumAddressHexFormat())
         {
             return string.Format(ADDRESS, message.Address);
         }
@@ -37,47 +37,47 @@ public class SiweMessageStringBuilder
         throw new FormatException("Invalid address format");
     }
 
-    private static string GetStatement(SiweMessage message)
+    private static string GetStatement(SiwfMessage message)
     {
         if (!string.IsNullOrEmpty(message.Statement))
         {
             return string.Format(STATEMENT, message.Statement);
         }
-            
+
         return string.Empty;
     }
 
-    private static string GetUriLine(SiweMessage message)
+    private static string GetUriLine(SiwfMessage message)
     {
         return string.Format(URI_LINE, message.Uri);
     }
 
-    private static string GetVersion(SiweMessage message)
+    private static string GetVersion(SiwfMessage message)
     {
         if (string.IsNullOrEmpty(message.Version)) throw new ArgumentException("Version cannot be null or empty");
         return string.Format(VERSION, message.Version);
     }
 
-    private static string GetChainId(SiweMessage message)
+    private static string GetChainId(SiwfMessage message)
     {
         if (string.IsNullOrEmpty(message.ChainId)) throw new ArgumentException("ChainId cannot be null or empty");
         return string.Format(CHAIN_ID, message.ChainId);
     }
 
-    private static string GetNonce(SiweMessage message)
+    private static string GetNonce(SiwfMessage message)
     {
         if (string.IsNullOrEmpty(message.Nonce)) throw new ArgumentException("Nonce cannot be null or empty");
         if (message.Nonce.Length < 8) throw new ArgumentException("Nonce has to be bigger or equal to 8 characters");
         return string.Format(NONCE, message.Nonce);
     }
 
-    private static string GetIssuedAt(SiweMessage message)
+    private static string GetIssuedAt(SiwfMessage message)
     {
         if (string.IsNullOrEmpty(message.IssuedAt)) throw new ArgumentException("IssuedAt cannot be null or empty");
         return string.Format(ISSUED_AT, message.IssuedAt);
     }
 
-    private static string GetExpirationTime(SiweMessage message)
+    private static string GetExpirationTime(SiwfMessage message)
     {
         if (!string.IsNullOrEmpty(message.ExpirationTime))
         {
@@ -87,7 +87,7 @@ public class SiweMessageStringBuilder
         return string.Empty;
     }
 
-    private static string GetNotBefore(SiweMessage message)
+    private static string GetNotBefore(SiwfMessage message)
     {
         if (!string.IsNullOrEmpty(message.NotBefore))
         {
@@ -98,7 +98,7 @@ public class SiweMessageStringBuilder
     }
 
 
-    private static string GetRequestId(SiweMessage message)
+    private static string GetRequestId(SiwfMessage message)
     {
         if (!string.IsNullOrEmpty(message.RequestId))
         {
@@ -108,7 +108,7 @@ public class SiweMessageStringBuilder
         return string.Empty;
     }
 
-    private static string GetResources(SiweMessage message)
+    private static string GetResources(SiwfMessage message)
     {
         if (message.Resources != null && message.Resources.Count > 0)
         {
@@ -124,7 +124,7 @@ public class SiweMessageStringBuilder
         return string.Empty;
     }
 
-    public static string BuildMessage(SiweMessage message)
+    public static string BuildMessage(SiwfMessage message)
     {
         return GetDomain(message) +
                GetAddress(message) +

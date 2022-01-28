@@ -5,10 +5,10 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>EVM Nfantom</Description>
-	  <AssemblyTitle>Nethereum.EVM</AssemblyTitle>
-	  <AssemblyName>Nethereum.EVM</AssemblyName>
-	  <PackageId>Nethereum.EVM</PackageId>
+	  <Description>Nfantom - Web3 Class Library to interact via RPC with an Fantom client, for example geth. Including contract interaction, deployment, transaction, encoding / decoding and event filters</Description>
+	  <AssemblyTitle>Nfantom.Web3</AssemblyTitle>
+	  <AssemblyName>Nfantom.Web3</AssemblyName>
+	  <PackageId>Nfantom.Web3</PackageId>
 	  <Version>4.1.1-fantom-beta1</Version>
 	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
 	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
@@ -25,8 +25,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md"/>
-		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\"/>
+		<None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
   <ItemGroup>
@@ -34,6 +34,7 @@
     <ProjectReference Include="..\Nfantom.Contracts\Nfantom.Contracts.csproj" />
     <ProjectReference Include="..\Nfantom.JsonRpc.RpcClient\Nfantom.JsonRpc.RpcClient.csproj" />
     <ProjectReference Include="..\Nfantom.Signer\Nfantom.Signer.csproj" />
+    <ProjectReference Include="..\Nfantom.Web3.Accounts\Nfantom.Web3.Accounts.csproj" />
   </ItemGroup>
 
 </Project>

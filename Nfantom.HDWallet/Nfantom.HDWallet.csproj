@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Description>
+		  Nfantom - uses BIP32 and BIP39 to generate an HD tree of Ethereum compatible addreses from a randomly generated word seeds.
+		  This is compatible with keys generated using the standard (m/44'/60'/0'/0/x) usded in  BIP44, MetaMask, Jaxx, MyEtherWallet (default), TREZOR App, Exodus
+		  or (m/44'/60'/0'/x) used in Electrum, MyEtherWallet (ledger), Ledger Chrome App, imToken
+	  </Description>
+	  <AssemblyTitle>Nfantom.HDWallet</AssemblyTitle>
+	  <AssemblyName>Nfantom.HDWallet</AssemblyName>
+	  <PackageId>Nfantom.HDWallet</PackageId>
+	  <Version>4.1.1-fantom-beta1</Version>
+	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
+	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
+	  <PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
+	  <PackageIcon>Nfantom.logo.BlueOnPurple.64x64.png</PackageIcon>
+	  <PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
+	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+	  <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Link="Nfantom.logo.BlueOnPurple.64x64.png">
+      <PackagePath>\</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+	  <None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md"/>
+	  <None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NBitcoin" Version="6.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nfantom.Web3\Nfantom.Web3.csproj" />
+  </ItemGroup>
+
+</Project>

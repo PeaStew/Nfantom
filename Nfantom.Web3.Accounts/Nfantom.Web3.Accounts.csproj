@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>Nfantom Web3 Accounts and Transaction Managers Class Library</Description>
+	  <Description>Nfantom - Web3 Accounts and Transaction Managers Class Library</Description>
 	  <AssemblyTitle>Nfantom.Web3.Accounts</AssemblyTitle>
 	  <AssemblyName>Nfantom.Web3.Accounts</AssemblyName>
 	  <PackageId>Nfantom.Web3.Accounts</PackageId>
