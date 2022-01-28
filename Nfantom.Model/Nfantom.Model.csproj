@@ -30,7 +30,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Nfantom.Hex" Version="4.1.1-fantom-beta1.1" />
-		<PackageReference Include="Nfantom.RLP" Version="4.1.1-fantom-beta1" />
+		<PackageReference Include="Nfantom.RLP" Version="4.1.1-fantom-beta1.1" />
 
 	</ItemGroup>
 

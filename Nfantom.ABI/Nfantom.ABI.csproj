@@ -30,6 +30,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-		<PackageReference Include="Nfantom.Util" Version="4.1.1-fantom-beta1" />
+		<PackageReference Include="Nfantom.Util" Version="4.1.1-fantom-beta1.1" />
+		<PackageReference Include="Nfantom.Hex" Version="4.1.1-fantom-beta1.1" />
+		<PackageReference Include="Nfantom.RLP" Version="4.1.1-fantom-beta1.1" />
   </ItemGroup>
 </Project>

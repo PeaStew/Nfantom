@@ -8,7 +8,7 @@
 	  <AssemblyTitle>Nfantom.Util</AssemblyTitle>
 	  <AssemblyName>Nfantom.Util</AssemblyName>
 	  <PackageId>Nfantom.Util</PackageId>
-	  <Version>4.1.1-fantom-beta1</Version>
+	  <Version>4.1.1-fantom-beta1.1</Version>
 	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
 	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
 	  <PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
@@ -24,13 +24,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md"/>
-		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\"/>
+		<None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Nfantom.Hex" Version="4.1.1-fantom-beta1.1" />
-		<PackageReference Include="Nfantom.RLP" Version="4.1.1-fantom-beta1" />
+		<PackageReference Include="Nfantom.RLP" Version="4.1.1-fantom-beta1.1" />
 	</ItemGroup>
 
 

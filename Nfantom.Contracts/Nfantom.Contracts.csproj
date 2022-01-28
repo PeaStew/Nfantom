@@ -29,7 +29,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Nfantom.Hex" Version="4.1.1-fantom-beta1" />
+		<PackageReference Include="Nfantom.Hex" Version="4.1.1-fantom-beta1.1" />
 	</ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nfantom.ABI\Nfantom.ABI.csproj" />

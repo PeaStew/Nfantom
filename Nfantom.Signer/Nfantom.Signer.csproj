@@ -25,15 +25,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md"/>
-		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\"/>
+		<None Include="LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
   <ItemGroup>
     <PackageReference Include="BouncyCastle.NetCore" Version="1.8.10" />
     <PackageReference Include="NBitcoin.Secp256k1" Version="2.0.2" />
 	  <PackageReference Include="Nfantom.Hex" Version="4.1.1-fantom-beta1.1" />
-	  <PackageReference Include="Nfantom.RLP" Version="4.1.1-fantom-beta1" />
-	  <PackageReference Include="Nfantom.Util" Version="4.1.1-fantom-beta1" />
+	  <PackageReference Include="Nfantom.RLP" Version="4.1.1-fantom-beta1.1" />
+	  <PackageReference Include="Nfantom.Util" Version="4.1.1-fantom-beta1.1" />
   </ItemGroup>
 
   <ItemGroup>
