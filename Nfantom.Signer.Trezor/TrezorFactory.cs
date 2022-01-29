@@ -1,18 +1,19 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using Device.Net;
 using Hid.Net;
 using Trezor.Net;
 
-namespace Nethereum.Signer.Trezor
+namespace Nfantom.Signer.Trezor
 {
     public class TrezorFactory
     {
-        public static async Task<IHidDevice> GetWindowsConnectedLedgerHidDeviceAsync()
+        public static async Task<WindowsHidDevice> GetWindowsConnectedLedgerHidDeviceAsync()
         {
             var connectedDevices = WindowsHidDevice.GetConnectedDeviceInformations();
 
-            var trezorDevices = connectedDevices.Where(d => d.VendorId == TrezorManager.TrezorVendorId && TrezorManager.TrezorProductId == 1).ToList();
-            var trezorDeviceInformation = trezorDevices.FirstOrDefault(t => t.Product == TrezorManager.USBOneName);
+            var trezorDevices = connectedDevices.Where(d => TrezorManager.DeviceDefinitions.Any(a=>a.VendorId == d.VendorId) && TrezorManager.DeviceDefinitions.Any(a=>a.ProductId == 1)).ToList();
+            var trezorDeviceInformation = trezorDevices.FirstOrDefault(t => TrezorManager.DeviceDefinitions.Any(a=>a.ProductId == t.ProductId));
 
             var trezorHidDevice = new WindowsHidDevice(trezorDeviceInformation);
             await trezorHidDevice.InitializeAsync().ConfigureAwait(false);
@@ -22,7 +23,7 @@ namespace Nethereum.Signer.Trezor
         public static async Task<TrezorManager> GetWindowsConnectedLedgerManagerAsync(EnterPinArgs enterPinCallback)
         {
             var trezorHidDevice = await GetWindowsConnectedLedgerHidDeviceAsync().ConfigureAwait(false);
-            return new TrezorManager(enterPinCallback, trezorHidDevice);
+            return new TrezorManager(enterPinCallback, enterPinCallback, (IDevice)trezorHidDevice);
         }
     }
 }

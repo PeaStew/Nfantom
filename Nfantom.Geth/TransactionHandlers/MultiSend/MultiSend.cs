@@ -5,7 +5,7 @@ using System.Text;
 using Nfantom.ABI;
 using Nfantom.ABI.FunctionEncoding.Attributes;
 using Nfantom.Contracts;
-using Nfantom.Geth;
+using Nfantom.Opera;
 using Nfantom.Opera.Extensions;
 
 namespace Nfantom.Opera.TransactionHandlers.MultiSend

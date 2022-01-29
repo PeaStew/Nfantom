@@ -1,23 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.1</TargetFrameworks>
-    <Nullable>enable</Nullable>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>Nfantom - signer library to sign and encode messages according to EIP-712</Description>
-	  <AssemblyTitle>Nfantom.Signer.EIP712</AssemblyTitle>
-	  <AssemblyName>Nfantom.Signer.EIP712</AssemblyName>
-	  <PackageId>Nfantom.Signer.EIP712</PackageId>
-	  <Version>4.1.1-fantom-beta1</Version>
-	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
-	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
-	  <PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
-	  <PackageIcon>Nfantom.logo.BlueOnPurple.64x64.png</PackageIcon>
-	  <PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
-	  <RepositoryType>git</RepositoryType>
-	  <RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
-	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net6.0</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Description>Nfantom - signer library to sign and encode messages according to EIP-712</Description>
+		<AssemblyTitle>Nfantom.Signer.EIP712</AssemblyTitle>
+		<AssemblyName>Nfantom.Signer.EIP712</AssemblyName>
+		<PackageId>Nfantom.Signer.EIP712</PackageId>
+		<Version>4.1.1-fantom-beta1</Version>
+		<PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
+		<Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
+		<PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
+		<PackageIcon>Nfantom.logo.BlueOnPurple.64x64.png</PackageIcon>
+		<PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
+		<Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
+		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+	</PropertyGroup>
 
 	<PropertyGroup>
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
@@ -29,13 +30,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Nfantom.Hex" Version="4.1.1-fantom-beta1.1" />
-		<PackageReference Include="Nfantom.Util" Version="4.1.1-fantom-beta1" />
+		<PackageReference Include="BouncyCastle.NetCore" Version="1.8.10" />
+		<PackageReference Include="NBitcoin.Secp256k1" Version="2.0.2" />
 	</ItemGroup>
-	
-  <ItemGroup>
-    <ProjectReference Include="..\Nfantom.ABI\Nfantom.ABI.csproj" />
-    <ProjectReference Include="..\Nfantom.Signer\Nfantom.Signer.csproj" />
-  </ItemGroup>
 
+
+	<ItemGroup>
+		<ProjectReference Include="..\Nfantom.ABI\Nfantom.ABI.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.ABI.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\Nfantom.Signer\Nfantom.Signer.csproj" >
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.Signer.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\Nfantom.Util\Nfantom.Util.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.Util.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\Nfantom.Hex\Nfantom.Hex.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.Hex.dll</IncludeAssets>
+		</ProjectReference>
+	</ItemGroup>
+
+	<Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+		<ItemGroup>
+			<BuildOutputInPackage Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))"/>
+		</ItemGroup>
+	</Target>
 </Project>

@@ -1,23 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.1</TargetFrameworks>
-    <Nullable>enable</Nullable>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Description>Nfantom - Service to interact with ERC721 compliant contracts</Description>
-	  <AssemblyTitle>Nfantom.StandardNonFungibleTokenERC721</AssemblyTitle>
-	  <AssemblyName>Nfantom.StandardNonFungibleTokenERC721</AssemblyName>
-	  <PackageId>Nfantom.StandardNonFungibleTokenERC721</PackageId>
-	  <Version>4.1.1-fantom-beta1</Version>
-	  <PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
-	  <Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
-	  <PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
-	  <PackageIcon>Nfantom.logo.BlueOnPurple.64x64.png</PackageIcon>
-	  <PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
-	  <RepositoryType>git</RepositoryType>
-	  <RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
-	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net6.0</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Description>Nfantom - Service to interact with ERC721 compliant contracts</Description>
+		<AssemblyTitle>Nfantom.StandardNonFungibleTokenERC721</AssemblyTitle>
+		<AssemblyName>Nfantom.StandardNonFungibleTokenERC721</AssemblyName>
+		<PackageId>Nfantom.StandardNonFungibleTokenERC721</PackageId>
+		<Version>4.1.1-fantom-beta1</Version>
+		<PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
+		<Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
+		<PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
+		<PackageIcon>Nfantom.logo.BlueOnPurple.64x64.png</PackageIcon>
+		<PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
+		<Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
+		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+	</PropertyGroup>
 
 	<PropertyGroup>
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
@@ -28,10 +29,42 @@
 		<None Include="..\Logos\Nfantom.logo.BlueOnPurple.64x64.png" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Nfantom.ABI\Nfantom.ABI.csproj" />
-    <ProjectReference Include="..\Nfantom.Contracts\Nfantom.Contracts.csproj" />
-    <ProjectReference Include="..\Nfantom.Web3\Nfantom.Web3.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Nfantom.ABI\Nfantom.ABI.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.ABI.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\Nfantom.Contracts\Nfantom.Contracts.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.Contracts.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\Nfantom.Web3\Nfantom.Web3.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.Web3.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\Nfantom.RPC\Nfantom.RPC.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.RPC.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\Nfantom.Hex\Nfantom.Hex.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.Hex.dll</IncludeAssets>
+		</ProjectReference>
 
+		<ProjectReference Include="..\Nfantom.RLP\Nfantom.RLP.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.RLP.dll</IncludeAssets>
+		</ProjectReference>
+
+		<ProjectReference Include="..\Nfantom.Util\Nfantom.Util.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Nfantom.Util.dll</IncludeAssets>
+		</ProjectReference>
+	</ItemGroup>
+
+	<Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+		<ItemGroup>
+			<BuildOutputInPackage Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))"/>
+		</ItemGroup>
+	</Target>
 </Project>

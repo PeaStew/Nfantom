@@ -1,10 +1,10 @@
-﻿using Nethereum.Hex.HexConvertors.Extensions;
-using Nethereum.Hex.HexTypes;
-using Nethereum.RPC.Eth;
-using Nethereum.RPC.Eth.DTOs;
+﻿using Nfantom.Hex.HexConvertors.Extensions;
+using Nfantom.Hex.HexTypes;
+using Nfantom.RPC.Eth;
+using Nfantom.RPC.Eth.DTOs;
 using System;
 using System.Threading.Tasks;
-using Nethereum.JsonRpc.Client.Streaming;
+using Nfantom.JsonRpc.Client.Streaming;
 
 namespace Nfantom.JsonRpc.WebSocketStreamingClient
 {

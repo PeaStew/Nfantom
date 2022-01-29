@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Description>Nfantom - JsonRpc.Client core library to use in conjunction with either the JsonRpc.RpcClient, the JsonRpc.IpcClient or other custom Rpc provider</Description>
@@ -16,7 +16,7 @@
 	  <PackageProjectUrl>https://nfantom.com</PackageProjectUrl>
 	  <RepositoryType>git</RepositoryType>
 	  <RepositoryUrl>https://github.com/PeaStew/Nfantom</RepositoryUrl>
-	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright>
+	  <Copyright>Nethereum(Nethereum.com (Juan Blanco) 2015-2021);Nfantom(Nfantom.com (PeaStew) 2022-2022)</Copyright><TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
 
 	<PropertyGroup>
@@ -33,4 +33,4 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
-</Project>
+<Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage"><ItemGroup><BuildOutputInPackage Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))"/></ItemGroup></Target></Project>

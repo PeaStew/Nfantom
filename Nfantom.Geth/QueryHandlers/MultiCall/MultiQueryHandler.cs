@@ -7,7 +7,7 @@ using Nfantom.JsonRpc.Client;
 using Nfantom.RPC.Eth.DTOs;
 using Nfantom.Opera.QueryHandlers;
 using Nfantom.Opera;
-using Nfantom.Geth;
+using Nfantom.Opera;
 
 namespace Nfantom.Opera.QueryHandlers.MultiCall
 {

@@ -12,7 +12,7 @@ using Nfantom.RPC.Eth.DTOs;
 using Nfantom.Util;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Nfantom.Geth.Comparers;
+using Nfantom.Opera.Comparers;
 using Nfantom.RPC.Eth.DTOs.ValueObjects;
 using Nfantom.Opera.Extensions;
 using Nfantom.Opera.Builders;

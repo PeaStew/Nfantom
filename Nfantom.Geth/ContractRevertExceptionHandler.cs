@@ -4,7 +4,7 @@ using Nfantom.Hex.HexConvertors.Extensions;
 using Nfantom.JsonRpc.Client;
 using Nfantom.RPC.Eth.Transactions;
 using Newtonsoft.Json.Linq;
-using Nfantom.Geth.Exceptions;
+using Nfantom.Opera.Exceptions;
 
 namespace Nfantom.Opera
 {

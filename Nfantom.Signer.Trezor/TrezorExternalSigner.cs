@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using System.IO;
 using System.Numerics;
 using System.Threading.Tasks;
-using Nethereum.Hex.HexConvertors.Extensions;
-using Nethereum.RLP;
-using Nethereum.Signer;
-using Nethereum.Signer.Crypto;
-using Nethereum.Util;
-using Nethereum.Web3.Accounts;
+using Newtonsoft.Json;
+using Nfantom.Hex.HexConvertors.Extensions;
+using Nfantom.RLP;
+using Nfantom.Signer;
+using Nfantom.Signer.Crypto;
+using Nfantom.Util;
+using Nfantom.Web3.Accounts;
 using Trezor.Net;
 using Trezor.Net.Contracts.Ethereum;
+using NotSupportedException = Trezor.Net.NotSupportedException;
 
-namespace Nethereum.Signer.Trezor
+namespace Nfantom.Signer.Trezor
 {
 
-    public class TrezorExternalSigner: EthExternalSignerBase
+    public class TrezorExternalSigner : EthExternalSignerBase
     {
         private readonly string _customPath;
         private readonly uint _index;
@@ -26,7 +28,7 @@ namespace Nethereum.Signer.Trezor
         public override ExternalSignerTransactionFormat ExternalSignerTransactionFormat { get; protected set; } = ExternalSignerTransactionFormat.Transaction;
 
         public TrezorExternalSigner(TrezorManager trezorManager, uint index)
-        { 
+        {
             _index = index;
             TrezorManager = trezorManager;
         }
@@ -40,8 +42,8 @@ namespace Nethereum.Signer.Trezor
 
         public override async Task<string> GetAddressAsync()
         {
-           var addressResponse = await TrezorManager.SendMessageAsync<EthereumAddress, EthereumGetAddress>(new EthereumGetAddress { ShowDisplay = false, AddressNs = GetPath() }).ConfigureAwait(false);
-           return addressResponse.Address.ToHex(true).ConvertToEthereumChecksumAddress();
+            var addressResponse = await TrezorManager.SendMessageAsync<EthereumAddress, EthereumGetAddress>(new EthereumGetAddress { ShowDisplay = false, AddressNs = GetPath() }).ConfigureAwait(false);
+            return addressResponse.Address.ToHexUTF8().ConvertToEthereumChecksumAddress();
         }
 
         protected override Task<byte[]> GetPublicKeyAsync()
@@ -68,10 +70,10 @@ namespace Nethereum.Signer.Trezor
                 Nonce = transaction.Nonce,
                 GasPrice = transaction.GasPrice,
                 GasLimit = transaction.GasLimit,
-                To = transaction.ReceiveAddress,
+                To = System.Text.Encoding.UTF8.GetString(transaction.ReceiveAddress),
                 Value = transaction.Value,
                 AddressNs = GetPath(),
-                ChainId =  (uint)new BigInteger(transaction.ChainId)
+                ChainId = (uint)new BigInteger(transaction.ChainId)
             };
 
             if (transaction.Data.Length > 0)
@@ -85,10 +87,7 @@ namespace Nethereum.Signer.Trezor
             transaction.SetSignature(EthECDSASignatureFactory.FromComponents(signature.SignatureR, signature.SignatureS, (byte)signature.SignatureV));
         }
 
-        public override Task SignAsync(Transaction1559 transaction)
-        {
-            throw new NotSupportedException();
-        }
+        public override Task SignAsync(Transaction1559 transaction) => throw new NotSupportedException(JsonConvert.SerializeObject(transaction));
 
         public override bool Supported1559 { get; } = false;
 
@@ -99,7 +98,7 @@ namespace Nethereum.Signer.Trezor
                 Nonce = transaction.Nonce,
                 GasPrice = transaction.GasPrice,
                 GasLimit = transaction.GasLimit,
-                To = transaction.ReceiveAddress,
+                To = System.Text.Encoding.UTF8.GetString(transaction.ReceiveAddress),
                 Value = transaction.Value,
                 AddressNs = GetPath(),
             };

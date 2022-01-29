@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using Nethereum.JsonRpc.Client;
-using Nethereum.JsonRpc.Client.Streaming;
-using Nethereum.RPC.Eth.DTOs;
-using Nethereum.RPC.Eth.Subscriptions;
+using Nfantom.JsonRpc.Client;
+using Nfantom.JsonRpc.Client.Streaming;
+using Nfantom.RPC.Eth.DTOs;
+using Nfantom.RPC.Eth.Subscriptions;
 
 namespace Nfantom.JsonRpc.WebSocketStreamingClient
 {

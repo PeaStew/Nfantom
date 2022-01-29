@@ -1,7 +1,7 @@
 using Newtonsoft.Json.Linq;
 using Nfantom.ABI.FunctionEncoding;
 using Nfantom.ABI.Model;
-using Nfantom.Geth.Exceptions;
+using Nfantom.Opera.Exceptions;
 using Nfantom.Hex.HexTypes;
 using Nfantom.JsonRpc.Client;
 using Nfantom.Opera.Extensions;

@@ -4,7 +4,7 @@ using Nfantom.JsonRpc.Client;
 using Nfantom.RPC;
 using Nfantom.RPC.Eth.Transactions;
 using Nfantom.RPC.TransactionManagers;
-using Nfantom.Geth.ContractHandlers;
+using Nfantom.Opera.ContractHandlers;
 using Nfantom.Opera.ContractHandlers;
 using Nfantom.Opera.QueryHandlers.MultiCall;
 

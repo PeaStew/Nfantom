@@ -1,10 +1,10 @@
-﻿using Nethereum.JsonRpc.Client;
+﻿using Nfantom.JsonRpc.Client;
 using System;
 using System.Collections.Generic;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using System.Text.RegularExpressions;
-using Nethereum.JsonRpc.Client.Streaming;
+using Nfantom.JsonRpc.Client.Streaming;
 
 namespace Nfantom.JsonRpc.WebSocketStreamingClient
 {
