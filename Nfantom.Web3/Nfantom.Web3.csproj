@@ -9,7 +9,7 @@
 		<AssemblyTitle>Nfantom.Web3</AssemblyTitle>
 		<AssemblyName>Nfantom.Web3</AssemblyName>
 		<PackageId>Nfantom.Web3</PackageId>
-		<Version>4.1.1-fantom-beta1.1</Version>
+		<Version>4.1.1-fantom-beta1.2</Version>
 		<PackageTags>Netherum;Fantom;Nfantom;Blockchain;Crypto 2.0</PackageTags>
 		<Authors>Nethereum(Juan Blanco;Nethereum contributors);Nfantom(PeaStew;Nfantom contributors)</Authors>
 		<PackageIconUrl>https://github.com/PeaStew/Nfantom/blob/main/Logos/Nfantom.logo.BlueOnPurple.64x64.png</PackageIconUrl>
@@ -33,6 +33,8 @@
 	<ItemGroup>
 		<PackageReference Include="Common.Logging.Core" Version="3.4.1" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="BouncyCastle.NetCore" Version="1.8.10" />
+		<PackageReference Include="NBitcoin.Secp256k1" Version="2.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>

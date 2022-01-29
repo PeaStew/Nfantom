@@ -51,8 +51,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.Opera", "Nfantom.Ge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.Web3", "Nfantom.Web3\Nfantom.Web3.csproj", "{D5F9A551-EF2A-42C2-8BDB-295728EF6FD1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.Web3Lite", "Nfantom.Web3Lite\Nfantom.Web3Lite.csproj", "{60590DA9-1CDF-4A4A-99B0-5E7C39651A33}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.BlockchainProcessing", "Nfantom.BlockchainProcessing\Nfantom.BlockchainProcessing.csproj", "{A6B23D3D-7EEB-48D1-B6C9-DE11F0B63028}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.Web3.Accounts", "Nfantom.Web3.Accounts\Nfantom.Web3.Accounts.csproj", "{9938E34A-52AB-43FE-85FF-2ED8DEC01670}"
@@ -66,7 +64,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.JsonRpc.WebSocketStreamingClient", "Nfantom.JsonRpc.WebSocketStreamingClient\Nfantom.JsonRpc.WebSocketStreamingClient.csproj", "{381CA091-AA89-4B49-A256-A676A04F0940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nfantom.HDWallet", "Nfantom.HDWallet\Nfantom.HDWallet.csproj", "{951832F6-67CF-479E-80FD-824682688ABC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.HDWallet", "Nfantom.HDWallet\Nfantom.HDWallet.csproj", "{951832F6-67CF-479E-80FD-824682688ABC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nfantom.Siwf.Core", "Nfantom.Siwf.Core\Nfantom.Siwf.Core.csproj", "{23A53DD5-5DE8-477C-822F-9EC10580C5BF}"
 EndProject
@@ -172,10 +170,6 @@ Global
 		{D5F9A551-EF2A-42C2-8BDB-295728EF6FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5F9A551-EF2A-42C2-8BDB-295728EF6FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5F9A551-EF2A-42C2-8BDB-295728EF6FD1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60590DA9-1CDF-4A4A-99B0-5E7C39651A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60590DA9-1CDF-4A4A-99B0-5E7C39651A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60590DA9-1CDF-4A4A-99B0-5E7C39651A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60590DA9-1CDF-4A4A-99B0-5E7C39651A33}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6B23D3D-7EEB-48D1-B6C9-DE11F0B63028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6B23D3D-7EEB-48D1-B6C9-DE11F0B63028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6B23D3D-7EEB-48D1-B6C9-DE11F0B63028}.Release|Any CPU.ActiveCfg = Release|Any CPU
